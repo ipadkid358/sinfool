@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>34056</integer>
+	<key>description</key>
+	<string>Customizes the progress bar with the following options (made for landscape devices)...
+
+- Flat URL
+- Full Height Pixelated Progress Bar
+- Custom Progress Bar Color
+
+NOTE:  This patch is best suited for landscape users (i.e. IPad or iPhone+ users who use their devices in landscape).
+
+[v.1] Tested with an iPad mini 4 on 10.2.  (2-3-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Pixelated Progress Bar (Customizable)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFNavigationBarURLButton</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundAlphaFactor:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundAlphaFactor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Flat URL</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFFluidProgressView</string>
+				<key>displayName</key>
+				<string>-(void) setCornerRadius:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setCornerRadius:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Pixelated Progress Bar (in landscape)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<real>0.0001</real>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFFluidProgressView</string>
+				<key>displayName</key>
+				<string>-(void) setProgressBarFillColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setProgressBarFillColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Progress Bar Color</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:0,122,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

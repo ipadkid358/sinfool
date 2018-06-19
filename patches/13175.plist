@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.fox.now</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>13175</integer>
+	<key>description</key>
+	<string>Removes commercials for the FOX NOW app.	Tested with versions 2.1.1 - 2.4.  (3-16-15).</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Commercials (v2.1.1 - 2.4)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>FWAd</string>
+				<key>displayName</key>
+				<string>-(unsigned int) adId</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>adId</string>
+				<key>typeEncoding</key>
+				<string>I8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(unsigned int) adId</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>11</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>11</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPPlayerControls</string>
+				<key>displayName</key>
+				<string>-(void) setUpAdTicks:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setUpAdTicks:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setUpAdTicks:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

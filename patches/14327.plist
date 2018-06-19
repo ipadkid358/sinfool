@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.camera</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>14327</integer>
+	<key>description</key>
+	<string>Disables the shutter sound when taking a picture.  Tested with iP6+ on 8.1.  
+
+NOTE:  The other patch titled "Disable Camera Sounds" doesn't work for me so I updated my original "No Shutter Sound" patches for iOS 8.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Shutter Sound (Camera Stealth Mode) [iOS 8]</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>AVCaptureStillImageOutput</string>
+				<key>displayName</key>
+				<string>-(void) playShutterSound:(unsigned int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>playShutterSound:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8I16</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) playShutterSound:(unsigned int)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

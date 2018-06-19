@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.paxlabs.paxvapor</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39608</integer>
+	<key>description</key>
+	<string>UI color customizer for the PAX app.  By default, I made it a dark style but you can change the colors to your liking or delete unwanted units.
+
+⚠️IMPORTANT:  This patch depends on ≥ Flex 3 beta version 3~beta36.  Please add "http://getdelta.co/" to your Cydia repo sources and install the beta version.
+
+[v.1] Tested with version 1.2.3.  (10-4-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>UI Color Customizer (Dark Mode) (v. 1.2.3)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIView</string>
+				<key>displayName</key>
+				<string>-(void) _setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Background</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:28,28,28,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIImageView</string>
+				<key>displayName</key>
+				<string>-(id) _effectiveTintColorWithImage:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_effectiveTintColorWithImage:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Image Button: (Return Value)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:146,146,146,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UILabel</string>
+				<key>displayName</key>
+				<string>-(void) _setTextColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setTextColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Text</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,255,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PXTemperatureCollectionViewCell</string>
+				<key>displayName</key>
+				<string>-(void) setColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Temperature Circle</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:4,139,27,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PXTemperatureGradientView</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

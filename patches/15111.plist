@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>15111</integer>
+	<key>description</key>
+	<string>Customizes the passcode screen as listed below.  I've made some general suggestions next to each unit but you can experiment and change the values as you please.  There are many possibilities, i.e. no buttons, totally transparent wallpaper, colored buttons/rings etc, etc.	(FYI):	Settings will also apply to lockscreen notifications, media player etc.  Tested with iP5 7.1.2.	
+
+• Status Bar Style
+• Wallpaper View/Blur
+• Tint Alpha
+• Button Animation
+• Button Ring Width
+• Button Color
+• Remove Emergency Call Button
+• Move/Remove Passcode Entry Field Text/Dots</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Passcode Screen Customizer (iOS 7)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(int) statusBarStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>statusBarStyle</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar Style:  (-1=none, pass-through=stock, 0=springboard size)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockOverlayStyleProperties</string>
+				<key>displayName</key>
+				<string>-(float) blurRadius</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>blurRadius</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Wallpaper View:  (0=transparent, pass-through=stock)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<real>0.5</real>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockOverlayStyleProperties</string>
+				<key>displayName</key>
+				<string>-(float) tintAlpha</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>tintAlpha</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Tint Alpha:  (0.0-1.0, pass-through=stock, 0=none/transparent)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(int) animationStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>animationStyle</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Button Animation:  [FYI]: values/results vary depending on other settings (-1=none, pass-through=yes, 0=yes/but no top dots)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(void) setDefaultRingStrokeWidth:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setDefaultRingStrokeWidth:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4f8</string>
+			</dict>
+			<key>name</key>
+			<string>Button Ring Width:	select any number... (0=none, OR delete this entry to restore stock rings)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPPathView</string>
+				<key>displayName</key>
+				<string>-(void) setFillColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setFillColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Button Color</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,255,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIPasscodeLockNumberPad</string>
+				<key>displayName</key>
+				<string>-(void) setShowsEmergencyCallButton:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShowsEmergencyCallButton:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4c8</string>
+			</dict>
+			<key>name</key>
+			<string>Show Emergency Call Button: (true=yes, false=no)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIPasscodeLockViewSimple4DigitKeypad</string>
+				<key>displayName</key>
+				<string>-(float) _entryFieldBottomYDistanceFromNumberPadTopButton</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_entryFieldBottomYDistanceFromNumberPadTopButton</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Passcode Entry Field Text/Dots • [distance from top of keypad]:  select any number... {4" devices}: (165=neither, 143=dots on SB, 110=EP text on SB)	{3.5" devices}: (110=neither, 90=dots on SB, 63=EP text on SB)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

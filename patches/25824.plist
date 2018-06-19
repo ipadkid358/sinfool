@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25824</integer>
+	<key>description</key>
+	<string>When searching for previous texts... are you tired of scrolling up &amp; waiting for them to load?  Do you hate that Spotlight doesn't open up to the specific text you've searched for?  If so, then this is for you!!!
+
+Removes the spinning loading indicator/"Load Earlier Messages" prompt by loading as many texts you choose.
+
+It's currently set to load "1000" texts but you can change this to any number you need to.  I suggest increasing the variable in 1000 increments since it has been reported that using "10,000" caused the sms app to crash &amp; lock up the device/requiring SpringBoard to be killed.
+
+[v.1] Tested with an iP6+ 9.0.2.  (10-27-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Load All Messages  ₁₀₋₂₇₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKConversation</string>
+				<key>displayName</key>
+				<string>-(void) setLoadedMessageCount:(unsigned long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setLoadedMessageCount:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8Q16</string>
+			</dict>
+			<key>name</key>
+			<string>Set # of Messages to Load</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>1000</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

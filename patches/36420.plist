@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.Preferences</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>36420</integer>
+	<key>description</key>
+	<string>Combines table view sections. Also provides options to hide separators.  By default, the separators are hidden.
+
+P=pass-through,  D=Delete,  F=False
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via r/jailbreak.  (3-31-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Combine Sections</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableView</string>
+				<key>displayName</key>
+				<string>-(double) _dataSourceHeightForHeaderInSection:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_dataSourceHeightForHeaderInSection:</string>
+				<key>typeEncoding</key>
+				<string>d24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Top Header Space (and header title text): (Show=P, Hide=0)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableView</string>
+				<key>displayName</key>
+				<string>-(double) sectionHeaderHeight</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>sectionHeaderHeight</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Top Section Gap: (Show=P, Hide=0)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableView</string>
+				<key>displayName</key>
+				<string>-(double) sectionFooterHeight</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>sectionFooterHeight</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Bottom Section Gap: (Show=P, Hide=0)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableView</string>
+				<key>displayName</key>
+				<string>-(void) setSeparatorStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSeparatorStyle:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Separators: (Hide=0, Show=1)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableView</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldDrawSeparatorAtTopOfSection:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldDrawSeparatorAtTopOfSection:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Top Separators: (Show=P, Hide=F)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableViewCell</string>
+				<key>displayName</key>
+				<string>-(void) _setShouldHaveFullLengthBottomSeparator:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setShouldHaveFullLengthBottomSeparator:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Bottom Separators: (Show=D)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIGroupTableViewCellBackgroundImageKey</string>
+				<key>displayName</key>
+				<string>-(int) sectionLocation</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>sectionLocation</string>
+				<key>typeEncoding</key>
+				<string>i16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cell Corners: (Round=0, Square=1, Round Top=2, Round Bottom=3, Default=P)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

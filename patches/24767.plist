@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>24767</integer>
+	<key>description</key>
+	<string>Squares corners of the following UI/blurred items listed below.  Also, disables the folder press highlight, removes open folder BG &amp; provides an option to square open folder icons.
+
+• Icons (after cache)
+• Folders
+• Page Dots
+• Alerts
+• CC &amp; NC Grabbers
+• Opening Apps
+• Icon Deletion "x"
+• Open Folder Icons
+• etc...
+
+[v.1] Tested with iP6+ 8.4.  (9-30-15)
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:	goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Square² UI - (Icons/Folders/Alerts/Grabbers/Page Dots)  ₉₋₃₀₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CALayer</string>
+				<key>displayName</key>
+				<string>-(void) setCornerRadius:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setCornerRadius:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Corners²</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterGrabberView</string>
+				<key>displayName</key>
+				<string>-(id) chevronView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>chevronView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>CC Grabber²</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(id) grabberView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>grabberView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>NC Grabber²</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconImageView</string>
+				<key>displayName</key>
+				<string>-(id) darkeningOverlayImage</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>darkeningOverlayImage</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>No Folder Press Highlight</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderBackgroundView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>No Open Folder BG</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBIconImageView</string>
+				<key>displayName</key>
+				<string>-(void) setShowsSquareCorners:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShowsSquareCorners:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Open Folder Icon Corners²</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

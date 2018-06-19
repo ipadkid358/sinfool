@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.chipotle.Chipotle</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>40069</integer>
+	<key>description</key>
+	<string>Removes the force upgrade popup for the Chipotle app.
+
+Useful for those on pre iOS 10 firmwares who want to continue using the app without upgrading to iOS 10.
+
+[v.1] Tested on an iP6+ on 9.3.3 with app version 4.7.8.  Requested by r/jailbreak user /u/casiopiano.  (11-21-17)
+
+☞PayPal:&amp;nbsp; goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>No Force Upgrade (v. 4.7.8)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>AppDelegate</string>
+				<key>displayName</key>
+				<string>-(void) showUpgrade:(bool) upgradeUrl:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showUpgrade:upgradeUrl:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8B16@20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

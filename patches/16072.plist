@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>16072</integer>
+	<key>description</key>
+	<string>Disables the power &amp; vibrate sound when connected to a power source.  Made as a request via r/jailbreak.  Tested w/iP6+ 8.1.   (12-17-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Connected To Power &amp; Vibrate Sound  ₁₂₋₁₇₋₁₄</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIController</string>
+				<key>displayName</key>
+				<string>-(void) _indicateConnectedToPower</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_indicateConnectedToPower</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) _indicateConnectedToPower</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

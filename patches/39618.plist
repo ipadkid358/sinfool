@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39618</integer>
+	<key>description</key>
+	<string>Makes the media controls background transparent by default or change the color to a custom one of your choosing.
+
+[v.1] Tested with an iPad mini 4 10.2.  (10-5-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>CC - Transparent Media Player BG (or Custom Color)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MPUEmptyNowPlayingView</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:0,0,0,0</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

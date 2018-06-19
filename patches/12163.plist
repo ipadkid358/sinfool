@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>12163</integer>
+	<key>description</key>
+	<string>Change the color of the following Lockscreen and SpringBoard UI elements...(LS): Clock/Date, NC/CC/Camera Grabbers &amp; Status Bar • (SB): Icon Labels, Page Dot Indicators &amp; Status Bar.  Change the (2) colors to your liking.  Tested with iP4 &amp; iPad3 on 7.1.2.  (8-4-14)   --------------------------------------------------FYI:  If you're using any other similar "color" or "hide" patches... Please be aware that while this patch can be used concurrently with others, most of them supersede this one so it's advised to disable/enable them accordingly to achieve your desired results.  Also, (if you haven't already done so) to enable editing of DL'd cloud patches... DL one of the Flex section patches, i.e. "Edit Downloaded Patches".</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Change Colors on Lockscreen &amp; SpringBoard... (LS): Clock/Date, NC/CC/Camera Grabbers &amp; Status Bar • (SB): Icon Labels, Page Dot Indicators &amp; Status Bar</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilitySettings</string>
+				<key>displayName</key>
+				<string>-(void) setPrimaryColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPrimaryColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>PRIMARY COLOR:  Status Bar, Clock/Date, Page Dot (selected), Icon Labels &amp; ~some tweaks i.e. Forecast~</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,127,0,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilitySettings</string>
+				<key>displayName</key>
+				<string>-(void) setSecondaryColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSecondaryColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>SECONDARY COLOR:  NC/CC/Camera Grabbers &amp; Page Dots (unselected)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:114,17,153,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilityLabel</string>
+				<key>displayName</key>
+				<string>-(BOOL) usesSecondaryColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>usesSecondaryColor</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>(optional)  LS Clock/Date uses Secondary Color • {TRUE = Enabled}</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilityView</string>
+				<key>displayName</key>
+				<string>-(BOOL) usesSecondaryColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>usesSecondaryColor</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>(optional)  SB Icon Labels use Secondary Color • {TRUE = Enabled}</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

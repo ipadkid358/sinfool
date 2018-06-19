@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobileslideshow</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>35255</integer>
+	<key>description</key>
+	<string>Shows full photos when scrolling in the photo browser by disabling auto zoom.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via r/jailbreak.  (2-27-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Auto Zoom (Full Photos)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpSettings</string>
+				<key>displayName</key>
+				<string>-(void) setMaximumInitialZoomToFillScaleForCompactSizeClass:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setMaximumInitialZoomToFillScaleForCompactSizeClass:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpSettings</string>
+				<key>displayName</key>
+				<string>-(double) maximumInitialZoomToFillScaleForCompactSizeClass</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>maximumInitialZoomToFillScaleForCompactSizeClass</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

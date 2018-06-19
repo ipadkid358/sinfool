@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>42033</integer>
+	<key>description</key>
+	<string>Provides a better switcher experience when using "Reduce Motion" by adding the following options...
+
+* Icon &amp; label slide over animations
+* Depth to the switcher cards
+* Faster scrolling
+
+Useful for those who use "Reduce Motion" (@ Settings -&gt; General -&gt; Accessibility) but want an appearance &amp; functionality closer to that of the stock switcher.
+
+[v.1] Tested with an iPad mini2 on 10.2.  Requested by email.  (4-20-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Switcher - Better Reduce Motion (iOS 10)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBReduceMotionDeckSwitcherViewController</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldUseDepth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldUseDepth</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBReduceMotionDeckSwitcherViewController</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldShowIconAndTitleInItemContainers</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldShowIconAndTitleInItemContainers</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBReduceMotionDeckSwitcherViewController</string>
+				<key>displayName</key>
+				<string>-(double) _opacityForIconTitleViewAtIndex:(unsigned long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_opacityForIconTitleViewAtIndex:</string>
+				<key>typeEncoding</key>
+				<string>d24@0:8Q16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherScrollView</string>
+				<key>displayName</key>
+				<string>-(void) setPagingEnabled:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPagingEnabled:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

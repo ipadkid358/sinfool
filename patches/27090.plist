@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobileslideshow</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27090</integer>
+	<key>description</key>
+	<string>Hides the scrolling photo picker cell.
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/jailbreak.  (12-24-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Hide Scrolling Photo Picker  ₁₂₋₂₄₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUScrubberView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

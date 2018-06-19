@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>22682</integer>
+	<key>description</key>
+	<string>Disables the screen from zooming in after searching via Find "On This Page".  Useful for iPhone users annoyed by this native feature. This is the stand alone version derived from my other patch "Zoom In For What".  Made after reading a request on r/jailbreak.  Tested on iP6+ 8.1 &amp; 8.4.  (7-11-15)
+
+FYI:	I've also made this into a tweak.
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Find "On This Page" Zoom In  ₇₋₁₁₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKWebView</string>
+				<key>displayName</key>
+				<string>-(bool) _zoomToRect:(FloatRect) withOrigin:(FloatPoint) fitEntireRect:(bool) minimumScale:(double) maximumScale:(double) minimumScrollDistance:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToRect:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:</string>
+				<key>typeEncoding</key>
+				<string>B64@0:8{FloatRect={FloatPoint=ff}{FloatSize=ff}}16{FloatPoint=ff}32B40d44d52f60</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKContentView</string>
+				<key>displayName</key>
+				<string>-(bool) _zoomToRect:(CGRect) withOrigin:(CGPoint) fitEntireRect:(bool) minimumScale:(double) maximumScale:(double) minimumScrollDistance:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToRect:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:</string>
+				<key>typeEncoding</key>
+				<string>B92@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16{CGPoint=dd}48B64d68d76d84</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

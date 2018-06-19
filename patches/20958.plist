@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.Music</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20958</integer>
+	<key>description</key>
+	<string>Provides the following status bar removal options... By default, I have the foreground option enabled.  Made after reading a request on r/jailbreak.
+
+• Entire SB (&amp; space)
+• Foreground
+• Now Playing
+
+[v.3] Tested w/iP6+ 8.1 &amp; 8.4.	(8-8-15)
+
+⚑ UPDATES:
+(5-3-15) *Initial release
+(8-1-15) *Fixed foreground not working on 8.4 &amp; added option to remove SB in 'Now Playing' only
+(8-8-15) *Changed foreground method to allow activator gestures
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Status Bar  ₈₋₈₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIViewController</string>
+				<key>displayName</key>
+				<string>-(bool) prefersStatusBarHidden</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>prefersStatusBarHidden</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar:  Show=FALSE, Remove=TRUE</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarForegroundStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(id) initWithHeight:(double) legibilityStyle:(long long) tintColor:(id) hasBusyBackground:(bool) idiom:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithHeight:legibilityStyle:tintColor:hasBusyBackground:idiom:</string>
+				<key>typeEncoding</key>
+				<string>@52@0:8d16q24@32B40q44</string>
+			</dict>
+			<key>name</key>
+			<string>Foreground: (Return Value) Show=pass-through, Hide=NULL</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MusicNowPlayingAtmosphericEffectView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>Now Playing Status Bar:  Show=pass-through, Remove=NULL</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

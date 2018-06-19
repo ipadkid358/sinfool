@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.camera</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27620</integer>
+	<key>description</key>
+	<string>Removes the yellow auto focus boxes, face detection/box and bias slider.  Delete entires you'd like to keep.
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/jailbreak.  (2-5-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Yellow Auto Focus Boxes  ₂₋₅₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMFocusIndicatorRectView</string>
+				<key>displayName</key>
+				<string>-(id) initWithSize:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithSize:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Focus Box</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMPreviewViewController</string>
+				<key>displayName</key>
+				<string>-(bool) _showExposureBiasSliderForPointView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_showExposureBiasSliderForPointView</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Bias Slider</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMFaceDetectionCommand</string>
+				<key>displayName</key>
+				<string>-(void) executeWithContext:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>executeWithContext:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Face Detection/Box</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

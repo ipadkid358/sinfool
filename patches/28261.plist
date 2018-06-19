@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>28261</integer>
+	<key>description</key>
+	<string>Enables chat head avatars/contact photos for the conversation list (in portrait too) and also adds the following options...
+
+* Hide Status Bar
+* Move Chat Heads Left
+* Hide Predictive Text Bar
+
+Useful for those with older/smaller devices however also adds a few visual annoyances.
+
+NOTE:  By default, the predictive text bar is hidden.  Use "TRUE" or "0" to enable options.
+
+Known issues: (but there's likely more)
+- Removes edit mode circles
+- Rounds predictive text cell corners/bigger cell etc.
+- Removes emoji category bar glyphs
+
+[v.1] Tested with an iP5 9.0.2.  Made as a request via r/jailbreak.  (3-26-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Enable Chat Head Avatars  ₃₋₂₆₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIViewController</string>
+				<key>displayName</key>
+				<string>-(BOOL) prefersStatusBarHidden</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>prefersStatusBarHidden</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Status Bar</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKConversationListCell</string>
+				<key>displayName</key>
+				<string>-(BOOL) showingEditControl</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showingEditControl</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Move Chat Heads Left</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardAssistantBar</string>
+				<key>displayName</key>
+				<string>-(float) assistantBarHeight</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>assistantBarHeight</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Predictive Bar</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardAssistantBar</string>
+				<key>displayName</key>
+				<string>-(float) sideBarWidth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>sideBarWidth</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKUIBehavior</string>
+				<key>displayName</key>
+				<string>-(BOOL) canShowContactPhotosInConversationList</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>canShowContactPhotosInConversationList</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIDevice</string>
+				<key>displayName</key>
+				<string>-(int) userInterfaceIdiom</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>userInterfaceIdiom</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITextInputTraits</string>
+				<key>displayName</key>
+				<string>-(int) keyboardAppearance</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>keyboardAppearance</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardEmojiCollectionViewCell</string>
+				<key>displayName</key>
+				<string>-(int) emojiFontSize</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>emojiFontSize</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>30</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

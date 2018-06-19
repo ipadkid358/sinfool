@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>23779</integer>
+	<key>description</key>
+	<string>Customizes tab bar notification badges by doing the following... You can use a custom text or configure both options to hide or show the badges and/or text altogether.  By default, I hid the badge/BG and used an emoji as the custom text.
+
+• Hide or Show Badge/BG
+• Customize Text
+
+[v.1] Tested with an iP6+ 8.4.  (8-12-15)
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Tab Bar • Custom Badge  ₈₋₁₂₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIBadgeBackground</string>
+				<key>displayName</key>
+				<string>-(id) initWithImage:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithImage:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Badge/BG:  Yes=NULL, No=pass-through</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIBadgeView</string>
+				<key>displayName</key>
+				<string>-(void) setValue:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setValue:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Set Custom Text... OR Stock=Delete This Entry </string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>💋</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

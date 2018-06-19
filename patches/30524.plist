@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>30524</integer>
+	<key>description</key>
+	<string>Makes the URL background flat.
+
+[v.1] Tested with an iPad mini2 &amp; iP6+ 9.3.3.  Made after reading a request a few months ago but they never replied.  (8-22-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Flat URL  ₈₋₂₂₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFNavigationBarURLButton</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundAlphaFactor:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundAlphaFactor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

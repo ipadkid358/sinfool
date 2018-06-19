@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26646</integer>
+	<key>description</key>
+	<string>Disables individual animations as listed below... 	
+
+Useful for those who want to disable specific transitional animations without enabling "reduce motion".  Change values to your needs.  By default, all animations are disabled except the Parallax entries.
+
+- Parallax Effect - Wallpaper/Alerts/Share Sheets
+- LS - Reduced Parallax Effect
+- LS to HS - (Icon Zoom) via Slide To Unlock*
+- LS to HS - (Icon Zoom) via Touch ID/Passcode*
+- LS to App - Zoom
+- HS - Reduced Parallax Effect
+- HS to App - Zoom
+- HS to Folder - (Icon Zoom)
+- HS to Folder - Open Zoom
+- Folder to HS - Close Zoom
+- App to HS - Zoom
+- App to App - Slide (Breadcrumb/LastApp)
+- Switcher - Dismiss/Zoom Down*
+
+[v.3] Tested with an iP6+ 9.0.2 &amp; 9.3.3.	Made as a request via r/jailbreak.  (8-9-16)
+
+⚑ UPDATES:
+(11-29-15) *Initial release
+(7-20-16) *Added breadcrumbs/last app entry
+(8-9-16) *Fixed breadcrumbs/last app Spotlight issue
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Animations - Partial Reduce Motion  ₈₋₉₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIParallaxMotionEffect</string>
+				<key>displayName</key>
+				<string>-(id) init</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>init</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Parallax Effect - Wallpaper/Alerts/Share Sheets</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppParallaxSettings</string>
+				<key>displayName</key>
+				<string>-(id) lockscreenWallpaperSettings</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>lockscreenWallpaperSettings</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>LS - Reduced Parallax Effect	(YES=null)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBCenterIconZoomAnimator</string>
+				<key>displayName</key>
+				<string>-(unsigned long long) _numberOfSignificantAnimations</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_numberOfSignificantAnimations</string>
+				<key>typeEncoding</key>
+				<string>Q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>LS to HS - (Icon Zoom) via Slide To Unlock</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBCenterAppIconZoomAnimator</string>
+				<key>displayName</key>
+				<string>-(unsigned long long) _numberOfSignificantAnimations</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_numberOfSignificantAnimations</string>
+				<key>typeEncoding</key>
+				<string>Q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>LS to HS - (Icon Zoom) via Touch ID/Passcode</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIAnimationLockScreenToAppZoomIn</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>LS to App - Zoom</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppParallaxSettings</string>
+				<key>displayName</key>
+				<string>-(id) homescreenWallpaperSettings</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>homescreenWallpaperSettings</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>HS - Reduced Parallax Effect	(YES=null)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIAnimationZoomUpApp</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>HS to App - Zoom</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconZoomAnimator</string>
+				<key>displayName</key>
+				<string>-(unsigned long long) _numberOfSignificantAnimations</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_numberOfSignificantAnimations</string>
+				<key>typeEncoding</key>
+				<string>Q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>HS to Folder - (Icon Zoom)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBRootAnimationSettings</string>
+				<key>displayName</key>
+				<string>-(id) folderOpenSettings</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>folderOpenSettings</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>HS to Folder - Open Zoom	*[MUST USE w/ "HS to Folder - (Icon Zoom)"]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBRootAnimationSettings</string>
+				<key>displayName</key>
+				<string>-(id) folderCloseSettings</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>folderCloseSettings</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Folder to HS - Close Zoom  *[MUST USE w/ "HS to Folder - (Icon Zoom)"]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIAnimationZoomDownApp</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>App to HS - Zoom</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIAnimationDosidoTransitionController</string>
+				<key>displayName</key>
+				<string>-(id) _animationFactory</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_animationFactory</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>App to App - Slide Animation (Breadcrumb/"Back to App"/LastApp)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIDismissSwitcherAnimationController</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id) activatingDisplayItem:(id) interactive:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:activatingDisplayItem:interactive:</string>
+				<key>typeEncoding</key>
+				<string>@36@0:8@16@24B32</string>
+			</dict>
+			<key>name</key>
+			<string>Switcher - Dismiss/Zoom Down</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

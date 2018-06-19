@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>29689</integer>
+	<key>description</key>
+	<string>Removes the closed folder background on the home screen.  Unlike the other transparent folder patches, this one still shows Activator's icon BG.
+
+⚑UPDATES:
+(8-5-16) *Initial release
+(8-7-16) *Added support for reduce transparency users
+(9-30-16) *Changed method to show Activator icon BG
+
+[v.3] Tested with an iP6+ 9.3.3.  Made as a request via r/jailbreak.  (9-30-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Folder - Transparent Background (closed)  ₉₋₃₀₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconImageView</string>
+				<key>displayName</key>
+				<string>-(void) setWallpaperRelativeCenter:(CGPoint)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setWallpaperRelativeCenter:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8{CGPoint=dd}16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconImageView</string>
+				<key>displayName</key>
+				<string>-(void) _updateAccessibilityBackgroundContrast</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateAccessibilityBackgroundContrast</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

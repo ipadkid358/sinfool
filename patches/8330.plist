@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.mlb.AtBatUniversal</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>8330</integer>
+	<key>description</key>
+	<string>Unlocks At Bat Premium.  This spoofs the T-mobile network.  Tap redeem offer, tap register, make an account.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>At Bat Premium</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SponsorHelper</string>
+				<key>displayName</key>
+				<string>-(BOOL) shouldOfferCarrierAppSponsor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldOfferCarrierAppSponsor:</string>
+				<key>typeEncoding</key>
+				<string>c12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(BOOL) shouldOfferCarrierAppSponsor:(id)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>ABInAppPurchaseHelper</string>
+				<key>displayName</key>
+				<string>-(BOOL) hasCarrierPlatformAccess</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>hasCarrierPlatformAccess</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(BOOL) hasCarrierPlatformAccess</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>InAppPurchaseConfig</string>
+				<key>displayName</key>
+				<string>-(BOOL) shouldUnlockAllFeatures</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldUnlockAllFeatures</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(BOOL) shouldUnlockAllFeatures</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

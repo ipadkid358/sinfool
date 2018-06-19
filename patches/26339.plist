@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.songza.Songza</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26339</integer>
+	<key>description</key>
+	<string>Disables the swipe right menu gesture.
+
+Useful for those who mistakenly invoke this menu and/or happen to use swipe right gestures to lock your device usually causing this menu to get stuck partially displayed.
+
+[v.1] Tested with version 3.3.2.  (11-12-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Swipe Right Menu Gesture  ₁₁₋₁₂₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>AD60SideMenuController</string>
+				<key>displayName</key>
+				<string>-(void) handlePan:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>handlePan:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

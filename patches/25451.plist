@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25451</integer>
+	<key>description</key>
+	<string>Simple style for alert sheets.  Includes the following options...
+
+* Center (Action Alerts)
+* Icons (hide/show)
+* Separators (hide/show)
+* Tap Outside To Dismiss
+* Width (optional)
+
+[v.1] Tested with an iP5 9.0.2.  (10-21-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Alerts - Simple Sheets  ₁₀₋₂₁₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIActionSheet</string>
+				<key>displayName</key>
+				<string>-(id) addMediaButtonWithTitle:(id) iconView:(id) andTableIconView:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>addMediaButtonWithTitle:iconView:andTableIconView:</string>
+				<key>typeEncoding</key>
+				<string>@20@0:4@8@12@16</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Icons:  (Arg#2) Yes=null, No=pass-through</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIAlertControllerVisualStyle</string>
+				<key>displayName</key>
+				<string>-(BOOL) hideActionSeparators</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>hideActionSeparators</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Separators</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIAlertController</string>
+				<key>displayName</key>
+				<string>-(BOOL) _canDismissWithGestureRecognizer</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_canDismissWithGestureRecognizer</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Tap To Dismiss</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIAlertController</string>
+				<key>displayName</key>
+				<string>-(int) preferredStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>preferredStyle</string>
+				<key>typeEncoding</key>
+				<string>i8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIAlertControllerVisualStyleProvidingWeakInterposer</string>
+				<key>displayName</key>
+				<string>-(id) visualStyleForAlertControllerStyle:(int) traitCollection:(id) descriptor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>visualStyleForAlertControllerStyle:traitCollection:descriptor:</string>
+				<key>typeEncoding</key>
+				<string>@20@0:4i8@12@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIAlertControllerView</string>
+				<key>displayName</key>
+				<string>-(float) _verticalLayoutWidth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_verticalLayoutWidth</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

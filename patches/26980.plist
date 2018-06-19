@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26980</integer>
+	<key>description</key>
+	<string>Removes the contact photo/chat head avatars from the conversation list.  
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/flextweak.  (12-18-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Remove Chat Head Avatars  ₁₂₋₁₈₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKConversationListCell</string>
+				<key>displayName</key>
+				<string>-(void) _setupAvatarViewIfNeeded</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setupAvatarViewIfNeeded</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>29554</integer>
+	<key>description</key>
+	<string>Disables/sets auto-lock duration to "Never" and disables the proximity sensor.
+
+* Useful for those who always have "Low Power Mode" enabled but don't like the 30 sec auto lock restriction.
+
+⚠️WARNING:  This overrides auto-lock duration at all times!!! (i.e. NOT just while in low power mode so therefore the time duration at Settings&gt;General&gt;Auto-Lock is irrelevant). By default, this also disables the proximity sensor.  This entry was added because triggering the proximity sensor while on a phone call with the device unlocked results in the screen not waking back up therefore forcing the need for a sleep button press to dismiss this locked state.
+
+⚑ UPDATES:
+(8-3-16) *Initial release
+(8-27-16) *Changed method for testing
+(9-10-16) *Disabled the proximity sensor
+
+[v.3] Tested with an iP6+ 9.3.3.  Made as a request via r/jailbreak.  Thank you to the following Reddit users for testing:
+
+/u/burcbuluklu
+/u/smurf3310
+/u/L0ganWalk3r
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Low Power Mode - Never Auto-Lock  ₉₋₁₀₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(void) _proximityChanged:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_proximityChanged:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Disables Proximity Sensor:  (Delete To Enable)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBacklightController</string>
+				<key>displayName</key>
+				<string>-(void) _resetIdleTimerAndUndim:(bool) source:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_resetIdleTimerAndUndim:source:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16i20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

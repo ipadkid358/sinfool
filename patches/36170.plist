@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>36170</integer>
+	<key>description</key>
+	<string>Changes the header title label to gray or increase the text size/header and change it to black for all bubble headers on the LS, NC and notification banners.  By default, it's set to a larger black text.
+
+[v.1] Tested with an iPad mini 4 10.2.  (3-22-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS/NC - Header Title Label (Gray or Larger Black)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCLookHeaderContentView</string>
+				<key>displayName</key>
+				<string>-(void) _configureTitleLabel:(id) forStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_configureTitleLabel:forStyle:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16q24</string>
+			</dict>
+			<key>name</key>
+			<string>(Arg#2): (Gray=1, Larger Black Text=2)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

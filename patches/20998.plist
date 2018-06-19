@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.cw.fullepisodes.ios</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20998</integer>
+	<key>description</key>
+	<string>All in one patch for the CW app. Tap the play button once video is queued.  Made as a request via r/flextweak.  Tested with ver. 2.4.1162.  (5-5-15)
+
+• Faster Startup
+• No Banner Ads
+• No Preroll Ads
+• No Commercials
+• No Rate Me
+• No Forced Update </string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>[AIO] Faster Startup, No Banner/Preroll Ads/Commercials/Rate Me/Forced Update (ver. 2.4.1162)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CWSplashScreenStaticImage</string>
+				<key>displayName</key>
+				<string>-(id) initRemoteImageWithDuration:(unsigned long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initRemoteImageWithDuration:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8Q16</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) initRemoteImageWithDuration:(unsigned long long)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CWSplashScreenStaticImage</string>
+				<key>displayName</key>
+				<string>-(void) usePlaceholderImage</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>usePlaceholderImage</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) usePlaceholderImage</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>DSMLinearVideoAdsManager</string>
+				<key>displayName</key>
+				<string>-(id) providerPrePodPromo</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>providerPrePodPromo</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) providerPrePodPromo</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>DSMLinearVideoAdsManager</string>
+				<key>displayName</key>
+				<string>-(bool) enabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>enabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(bool) enabled</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>GADAdFetcher</string>
+				<key>displayName</key>
+				<string>-(id) init</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>init</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) init</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>GADBannerView</string>
+				<key>displayName</key>
+				<string>-(id) slot</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>slot</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) slot</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PWAppConfiguration</string>
+				<key>displayName</key>
+				<string>-(bool) isForceUpgradeEnabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isForceUpgradeEnabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(bool) isForceUpgradeEnabled</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PWAppConfiguration</string>
+				<key>displayName</key>
+				<string>-(bool) isRatingsEnabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isRatingsEnabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(bool) isRatingsEnabled</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

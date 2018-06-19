@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31681</integer>
+	<key>description</key>
+	<string>Removes the cell backgrounds from the minus &amp; HS Spotlight pages.
+
+NOTE:  Please keep in mind that other patches/tweaks can vary your end results.
+
+[v.1] Tested with an iP6+ 9.3.3.  (10-15-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Spotlight - Transparent Cells (No Background)  ₁₀₋₁₅₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SearchUIRoundedView</string>
+				<key>displayName</key>
+				<string>-(void) updateCornersRoundTop:(bool) roundBottom:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>updateCornersRoundTop:roundBottom:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

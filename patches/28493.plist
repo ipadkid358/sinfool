@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.johncoates.Flex</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>28493</integer>
+	<key>description</key>
+	<string>Removes the "Edit" button from the navigation bar.
+
+Useful for those who mistakenly tap/enter edit mode or if you just want to prevent patch reordering.
+
+⚠️NOTE:  A respring or the killing of Flex from multitasking is required after enabling/disabling this patch.
+
+[v.1] Tested with an iP6+ 9.0.2 &amp; Flex 2.5~Beta18.  (4-17-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Edit Button  ₄₋₁₇₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UINavigationItem</string>
+				<key>displayName</key>
+				<string>-(id) _leftBarButtonItem</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_leftBarButtonItem</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

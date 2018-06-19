@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25010</integer>
+	<key>description</key>
+	<string>Forces the notification banner to remain visible until one of the following happens...
+
+(1)  Banner is manually dismissed
+(2)  Current screen is left
+(3)  Screen dims
+(4)  Device is locked
+
+[v.1] Tested with an iP5 9.0.2.  (10-15-15)
+
+★ If you'd like to donate, please send money to...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Banners - Sticky Notifications  ₁₀₋₁₅₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBannerController</string>
+				<key>displayName</key>
+				<string>-(void) _dismissIntervalElapsed</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_dismissIntervalElapsed</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27478</integer>
+	<key>description</key>
+	<string>Changes the background style of the LS Grabbers, Dock &amp; Folders (open).  By default, I have the BG set to black but you can change/experiment with your own values...
+
+- No Blur = "0"
+- Black = "2"
+- Less Blur = "3"
+- Lesser Blur = "4"
+- Soft Blur = "5"
+- Light Gray = "9"
+- Frosted Blur = "10"
+
+NOTE:  If you like this patch then you may also want to try...
+
+- "Switcher - HS Card BG Style"
+- "Switcher - Wallpaper BG Style"
+
+[v.1] Tested with an iP6+ 9.0.2.  (1-27-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Grabbers/Dock/Open Folder BG Style  ₁₋₂₇₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBWallpaperEffectView</string>
+				<key>displayName</key>
+				<string>-(void) setStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setStyle:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>No Blur=0, Black=2, Less Blur=3, Lesser Blur=4, Soft Blur=5, Light Gray=9, Frosted Blur=10</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

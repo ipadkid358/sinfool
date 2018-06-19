@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31572</integer>
+	<key>description</key>
+	<string>Disables the home button EXCEPT on the lockscreen thereby retaining the ability to wake the device using the home button (presuming it functions or at least partially functions).
+
+*Useful if you have a broken home button which triggers inadvertently but not always AND maybe if you wanted to prevent a child from exiting out of apps etc.
+
+[v.1] Tested with an iP6+ 9.0.2 &amp; 9.3.3.  Made as a request via r/jailbreak.  Changed/removed "(Not On Lockscreen)".  (10-9-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>ButtonDisabler - Home Button (Except On Lockscreen)  ₁₀₋₉₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(void) _menuButtonWasHeld</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_menuButtonWasHeld</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(void) _setMenuButtonTimer:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setMenuButtonTimer:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

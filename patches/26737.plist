@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>net.whatsapp.WhatsApp</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26737</integer>
+	<key>description</key>
+	<string>Disables/Customizes the return key as listed below.  By default, the return key is only disabled.
+
+- Disable
+- Disable Highlight Text
+- Custom "return" Text
+- Blue Button Color
+
+[v.1]  Made as a request via r/jailbreak.  (12-4-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>KB - Disable/Custom Return Key  ₁₂₋₄₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardImpl</string>
+				<key>displayName</key>
+				<string>-(bool) returnKeyEnabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>returnKeyEnabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Enables Return Key</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardLayoutStar</string>
+				<key>displayName</key>
+				<string>-(void) setReturnKeyEnabled:(bool) withDisplayName:(id) withType:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setReturnKeyEnabled:withDisplayName:withType:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8B16@20i28</string>
+			</dict>
+			<key>name</key>
+			<string>(Arg#1): Highlight Return Text (FALSE=Disables Key), (Arg#2): Custom Text, (Arg#3): Type/Color: 0=stock, 1=blue</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

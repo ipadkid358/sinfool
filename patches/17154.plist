@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>17154</integer>
+	<key>description</key>
+	<string>Disables switcher's swipe up to close action.  Made as a request via r/jailbreak.  Tested with iP6+ 8.1 &amp; 8.4.  (7-14-15)
+
+UPDATES:
+(1-10-15) *Initial release
+(7-14-15) *Changed patch title
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>SW • Disable Swipe Up To Close Action  ₇₋₁₄₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(bool) switcherScroller:(id) isDisplayItemRemovable:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>switcherScroller:isDisplayItemRemovable:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

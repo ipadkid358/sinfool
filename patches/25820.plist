@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25820</integer>
+	<key>description</key>
+	<string>Changes all balloons to Black.  By default, I didn't change the Gray Balloons.  Use the "Gray Balloons" entry to make them black.
+
+[v.1] Tested with an iP6+ 9.0.2.  (10-27-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Black Balloons  ₁₀₋₂₇₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKUIBehavior</string>
+				<key>displayName</key>
+				<string>-(id) blue_balloonColors</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>blue_balloonColors</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Blue Balloons</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKUIBehavior</string>
+				<key>displayName</key>
+				<string>-(id) green_balloonColors</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>green_balloonColors</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Green Balloons</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKMessagePartChatItem</string>
+				<key>displayName</key>
+				<string>-(BOOL) color</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>color</string>
+				<key>typeEncoding</key>
+				<string>c16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Gray Balloons</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

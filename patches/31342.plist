@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31342</integer>
+	<key>description</key>
+	<string>Gives the text input entry field bar a flat appearance by removing the background.  Also provides options to remove the audio button &amp; sending animation (by default, both are disabled).
+
+⚑ UPDATES:
+(9-22-16) *Initial release
+(9-22-16) *Added option to remove audio button
+(10-5-16) *Added option to remove sending animation
+
+[v.3] Tested with an iP6+ 9.3.3.  Made after reading a request on r/jailbreak.  (10-5-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Flat Text Field Input BG  ₁₀₋₅₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKMessageEntryView</string>
+				<key>displayName</key>
+				<string>-(id) audioButton</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>audioButton</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Audio Button:  (Yes=NULL, No=pass-through)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKComposition</string>
+				<key>displayName</key>
+				<string>-(bool) isSendAnimated</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isSendAnimated</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Send Animated:  (True or False)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UITextFieldRoundedRectBackgroundViewNeue</string>
+				<key>displayName</key>
+				<string>-(id) _initWithFrame:(CGRect) active:(bool) lineWidth:(double) updateView:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_initWithFrame:active:lineWidth:updateView:</string>
+				<key>typeEncoding</key>
+				<string>@64@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16B48d52B60</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

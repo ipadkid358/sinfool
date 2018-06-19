@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20313</integer>
+	<key>description</key>
+	<string>Prevents accidental dismissal of quick reply banners.  Disables the following actions after a quick reply banner (i.e. Messages, Email etc) has been pulled down...  Made after reading a request on r/jailbreak.
+
+• Swipe up to dismiss
+• Tap to dismiss (area below banner)
+
+[v.1] Tested on iP6+ 8.1.  (4-6-15)
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Banners • NoQuickDismiss  ₄₋₆₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBannerGestureHandler</string>
+				<key>displayName</key>
+				<string>-(id) initWithBannerController:(id) bannerViewController:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithBannerController:bannerViewController:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBannerContainerViewController</string>
+				<key>displayName</key>
+				<string>-(void) _handleBannerContainerTapGesture:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_handleBannerContainerTapGesture:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

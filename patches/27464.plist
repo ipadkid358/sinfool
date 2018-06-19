@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27464</integer>
+	<key>description</key>
+	<string>Enables Grid style tabs with the following customizable options...
+
+- Single or Stacked Tabs
+- Tabs Per Row
+- No Stack Titles
+- No Stack Title Space
+- "X" Color
+- Tab Title Color
+- Disable parallax
+- Transparent Toolbar/Move Buttons To Sides
+
+⚑ UPDATES:
+(1-26-16) *Initial release
+(5-2-16) *Added more features
+
+[v.2] Tested with an iP6+ 9.0.2.  (5-2-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Grid Style Tabs  ₅₋₂₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabOverviewItem</string>
+				<key>displayName</key>
+				<string>-(id) stackName</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>stackName</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Single Tabs (=NULL)  Stacked Tabs (=pass-through)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabOverview</string>
+				<key>displayName</key>
+				<string>-(unsigned long long) _tabsPerRow</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_tabsPerRow</string>
+				<key>typeEncoding</key>
+				<string>Q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Tabs Per Row</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>3</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabStackTitleView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>No Stack Titles  (Yes=NULL)</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabOverview</string>
+				<key>displayName</key>
+				<string>-(bool) _isShowingStacks</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_isShowingStacks</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>No Stack Title Space  (Yes=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabOverviewItem</string>
+				<key>displayName</key>
+				<string>-(void) setTitleColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTitleColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>"X" Color</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:253,2,16,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabThumbnailView</string>
+				<key>displayName</key>
+				<string>-(void) setTitleColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTitleColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Title Color</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:0,0,0,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIMotionAnalyzer</string>
+				<key>displayName</key>
+				<string>-(id) initWithSettings:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithSettings:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Disable Parallax  (Yes=NULL, No=pass-through)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BrowserToolbar</string>
+				<key>displayName</key>
+				<string>-(id) initWithPlacement:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithPlacement:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Transparent Toolbar/Move Buttons To Sides  (Yes=0, No=pass-through)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabController</string>
+				<key>displayName</key>
+				<string>-(void) setUsesTiltedTabView:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setUsesTiltedTabView:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabController</string>
+				<key>displayName</key>
+				<string>-(void) setUsesTabOverview:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setUsesTabOverview:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

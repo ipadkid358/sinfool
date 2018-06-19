@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>42314</integer>
+	<key>description</key>
+	<string>Fades out the LS/NC time &amp; date when scrolling notifications and instead, shows the time on the status bar.
+
+[v.1] Tested with an iPad mini2 on 11.1.2.  (5-13-18)
+
+☞Donations:  paypal.me/goin730</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>LS/NC - Fade Out Time &amp; Date + Show Time On Status Bar When Scrolling Notifications</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDashBoardMainPageContentViewController</string>
+				<key>displayName</key>
+				<string>-(void) aggregateAppearance:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>aggregateAppearance:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>35376</integer>
+	<key>description</key>
+	<string>Allows you to use custom carrier text on iPads (&amp; I guess other devices without cell service) when cellular data is disabled.  Default iOS shows "iPad" as your user/carrier name when you disable cellular data but this overrides that.  Change the text to your liking.
+
+IMPORTANT NOTE:  This patch only takes effect after cellular data is enabled so if you have cellular data disabled after a respring, you'll see "Searching..." and then "No Network" until you manually enable/disable cellular data again.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via email.  (3-1-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Status Bar - Custom "IPad" Carrier</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTelephonyManager</string>
+				<key>displayName</key>
+				<string>-(void) _reallySetOperatorName:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_reallySetOperatorName:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Set Carrier Name...</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>Flex 3</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTelephonyManager</string>
+				<key>displayName</key>
+				<string>-(bool) cellularRadioCapabilityIsActive</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>cellularRadioCapabilityIsActive</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTelephonyManager</string>
+				<key>displayName</key>
+				<string>-(void) _startFakeServiceIfNecessary</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_startFakeServiceIfNecessary</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBStatusBarStateAggregator</string>
+				<key>displayName</key>
+				<string>-(void) _updateSignalStrengthItem</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateSignalStrengthItem</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

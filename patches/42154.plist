@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>42154</integer>
+	<key>description</key>
+	<string>Disables the today view and camera pages from the lockscreen &amp; notification center.  Also, provides an option to disable horizontal scrolling of notifications.
+
+⚑ UPDATES:
+(4-30-18) *Initial release
+(5-19-18) *Added option to disable horizontal scrolling of notifications
+
+[v.2] Tested with an iPad mini2 on 11.1.2.  (5-19-18)
+
+☞Donations:  paypal.me/goin730</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>LS/NC - Disable Today View &amp; Camera (iOS 11)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDashBoardCombinedListViewController</string>
+				<key>displayName</key>
+				<string>-(bool) _disableScrolling</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_disableScrolling</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Disables Horizontal Scrolling Of Notifications</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBMainDisplayPolicyAggregator</string>
+				<key>displayName</key>
+				<string>-(bool) _allowsCapabilityLockScreenTodayViewWithExplanation:(id*)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_allowsCapabilityLockScreenTodayViewWithExplanation:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8^@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBMainDisplayPolicyAggregator</string>
+				<key>displayName</key>
+				<string>-(bool) _allowsCapabilityLockScreenCameraWithExplanation:(id*)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_allowsCapabilityLockScreenCameraWithExplanation:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8^@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.ObsessiveC.FlappysBack</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>10645</integer>
+	<key>description</key>
+	<string>Removes ads &amp; popups.  (5-3-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Removes Ads &amp; Popups</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MPAdView</string>
+				<key>displayName</key>
+				<string>-(void) loadAd</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>loadAd</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) loadAd</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MPInterstitialAdController</string>
+				<key>displayName</key>
+				<string>-(void) loadAd</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>loadAd</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) loadAd</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>OCAlertManager</string>
+				<key>displayName</key>
+				<string>-(void) showUpgradeReminderAlert</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showUpgradeReminderAlert</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) showUpgradeReminderAlert</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>OCAlertManager</string>
+				<key>displayName</key>
+				<string>-(void) showExtraLifeReminderAlert</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showExtraLifeReminderAlert</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) showExtraLifeReminderAlert</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>OCAlertManager</string>
+				<key>displayName</key>
+				<string>-(void) showRateReminderAlert</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showRateReminderAlert</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) showRateReminderAlert</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

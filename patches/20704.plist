@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20704</integer>
+	<key>description</key>
+	<string>Disables the screen from zooming in after tapping a text input field or after searching via "find on page" (allowed by default but can be disabled by changing indicated values). Useful for iPhone users annoyed by these native features. Made after reading a request on r/jailbreak. Tested on iP6+ 8.1 &amp; 8.4.  (7-11-15)
+
+⚑ UPDATES:
+(4-22-15) *initial release
+(4-27-15) *added "find on page" entries
+(7-11-15) *by default, now allows "find on page" zooming.  Change values to "FALSE" to disable zoom.
+
+FYI:	I'll make this into a tweak shorty.
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Zoom In 4 What  ₇₋₁₁₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKWebView</string>
+				<key>displayName</key>
+				<string>-(void) _zoomToFocusRect:(FloatRect) selectionRect:(FloatRect) fontSize:(float) minimumScale:(double) maximumScale:(double) allowScaling:(bool) forceScroll:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToFocusRect:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:</string>
+				<key>typeEncoding</key>
+				<string>v76@0:8{FloatRect={FloatPoint=ff}{FloatSize=ff}}16{FloatRect={FloatPoint=ff}{FloatSize=ff}}32f48d52d60B68B72</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKContentView</string>
+				<key>displayName</key>
+				<string>-(void) _zoomToFocusRect:(CGRect) selectionRect:(CGRect) fontSize:(float) minimumScale:(double) maximumScale:(double) allowScaling:(bool) forceScroll:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToFocusRect:selectionRect:fontSize:minimumScale:maximumScale:allowScaling:forceScroll:</string>
+				<key>typeEncoding</key>
+				<string>v108@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16{CGRect={CGPoint=dd}{CGSize=dd}}48f80d84d92B100B104</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKWebView</string>
+				<key>displayName</key>
+				<string>-(bool) _zoomToRect:(FloatRect) withOrigin:(FloatPoint) fitEntireRect:(bool) minimumScale:(double) maximumScale:(double) minimumScrollDistance:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToRect:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:</string>
+				<key>typeEncoding</key>
+				<string>B64@0:8{FloatRect={FloatPoint=ff}{FloatSize=ff}}16{FloatPoint=ff}32B40d44d52f60</string>
+			</dict>
+			<key>name</key>
+			<string>Find On Page Zoom In:  (Return Value) Yes=TRUE, No=FALSE</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WKContentView</string>
+				<key>displayName</key>
+				<string>-(bool) _zoomToRect:(CGRect) withOrigin:(CGPoint) fitEntireRect:(bool) minimumScale:(double) maximumScale:(double) minimumScrollDistance:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_zoomToRect:withOrigin:fitEntireRect:minimumScale:maximumScale:minimumScrollDistance:</string>
+				<key>typeEncoding</key>
+				<string>B92@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16{CGPoint=dd}48B64d68d76d84</string>
+			</dict>
+			<key>name</key>
+			<string>Find On Page Zoom In:  (Return Value) Yes=TRUE, No=FALSE</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

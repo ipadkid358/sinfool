@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>21258</integer>
+	<key>description</key>
+	<string>Moves status bar position down on the lock &amp; home screen (by default, positioned to bottom for an iP5 but can be adjusted to any height you choose).  This patch does the following...
+
+• Moves SB Down
+• Removes or Changes LS SB to HS size
+• Disables SB swipe/tap gestures at HS
+
+[v.2] Tested with iP5 &amp; iP6+ 8.4.  (8-8-15)
+
+⚑ UPDATES:
+(??-??-15) *Initial release
+(8-8-15) *Updated to work with 8.4 &amp; added method to disable Status Bar gestures.
+
+⚠️ WARNING!  This patch disables Activator Status Bar Gestures at the HS except when/if any double status bar apps are in use.
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS/HS • Move Status Bar Down  ₈₋₈₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(long long) statusBarStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>statusBarStyle</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>LS SB:  -1=none 1=springboard size</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarForegroundStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(id) initWithHeight:(double) legibilityStyle:(long long) tintColor:(id) hasBusyBackground:(bool) idiom:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithHeight:legibilityStyle:tintColor:hasBusyBackground:idiom:</string>
+				<key>typeEncoding</key>
+				<string>@52@0:8d16q24@32B40q44</string>
+			</dict>
+			<key>name</key>
+			<string>(Argument #1) HEIGHT:  4S=942, iP5=1120, iP6+=1452  (Argument #3) COLOR:  optional</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>1120</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIView</string>
+				<key>displayName</key>
+				<string>-(bool) _canHandleStatusBarTouchAtLocation:(CGPoint)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_canHandleStatusBarTouchAtLocation:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8{CGPoint=dd}16</string>
+			</dict>
+			<key>name</key>
+			<string>Disables Status Bar Touch</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.Preferences</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26578</integer>
+	<key>description</key>
+	<string>Disables cell selections from highlighting.
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/flextweak.  (11-26-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Selection Highlighting  ₁₁₋₂₆₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableViewCell</string>
+				<key>displayName</key>
+				<string>-(void) setSelected:(bool) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSelected:animated:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<array/>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITableViewCell</string>
+				<key>displayName</key>
+				<string>-(void) setHighlighted:(bool) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setHighlighted:animated:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

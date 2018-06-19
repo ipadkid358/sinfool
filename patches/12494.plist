@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.cbsvideo.app</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>12494</integer>
+	<key>description</key>
+	<string>All in one patch for CBS.  Faster startup, no banner ads, FF commercials &amp; remove force upgrade.  Tested with version 2.5 but most likely still works with more recent versions. UPDATED (11-5-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>[AIO] Faster Startup, No Banner Ads, FF Commercials &amp; Remove Force Update (ver. 2.5)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SplashScreenViewController_iPhone</string>
+				<key>displayName</key>
+				<string>-(void) setTonightLabel:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTonightLabel:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setTonightLabel:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SplashScreenViewController_iPad</string>
+				<key>displayName</key>
+				<string>-(void) setTonightLabel:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTonightLabel:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setTonightLabel:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SplashScreenViewController_iPhone</string>
+				<key>displayName</key>
+				<string>-(void) setShows:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShows:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setShows:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SplashScreenViewController_iPad</string>
+				<key>displayName</key>
+				<string>-(void) setShows:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShows:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setShows:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>GADAdFetcher</string>
+				<key>displayName</key>
+				<string>-(id) init</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>init</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) init</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MDStream</string>
+				<key>displayName</key>
+				<string>-(void) setAdBreaks:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setAdBreaks:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setAdBreaks:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CBSiSkinSlider</string>
+				<key>displayName</key>
+				<string>-(void) setAdMarkersAreHidden:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setAdMarkersAreHidden:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4c8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setAdMarkersAreHidden:(BOOL)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIAlertView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) initWithFrame:(CGRect)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

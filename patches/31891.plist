@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31891</integer>
+	<key>description</key>
+	<string>Enables the CarPlay style keyboard and provides an option to enable the touch pad slider.
+
+NOTE:  This patch isn't practical for regular use since it has a variety of issues... i.e. the "123" key doesn't work and the keyboard doesn't center properly so just test it for fun. :)
+
+[v.1] Tested with an iP6+ 9.3.3.  (11-5-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>KB - CarPlay Style  ₁₁₋₅₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBScreenTraits</string>
+				<key>displayName</key>
+				<string>-(bool) touchpadInput</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>touchpadInput</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Enable Touch Pad Slider</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBScreenTraits</string>
+				<key>displayName</key>
+				<string>-(long long) idiom</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>idiom</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>3</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilephone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>22995</integer>
+	<key>description</key>
+	<string>Changes the Dialer Keypad Button to an Oval shape.  Tested with an iP6+ 8.4.  (7-20-15)
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:	  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Dialer • Keypad Button Is Oval  ₇₋₂₀₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(void) setPaddingOutsideRing:(UIEdgeInsets)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPaddingOutsideRing:</string>
+				<key>typeEncoding</key>
+				<string>v48@0:8{UIEdgeInsets=dddd}16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

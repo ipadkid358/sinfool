@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobileslideshow</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27976</integer>
+	<key>description</key>
+	<string>Changes the size of the black/white space in between photos when scrolling.  By default, I have it set to "5" but you can remove the entire space using "0" or change the space/value to whatever you'd like.
+
+[v.1] Tested with an iP6+ 9.0.2.  (3-2-16)
+
+Any donations are greatly appreciated...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Change Space Between Photos When Scrolling  ₃₋₂₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpSettings</string>
+				<key>displayName</key>
+				<string>-(void) setInterpageSpacing:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setInterpageSpacing:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Set Spacing:  (0=None)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>5</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

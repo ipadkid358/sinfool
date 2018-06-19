@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.waze.iphone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27462</integer>
+	<key>description</key>
+	<string>Hides the following items for a cleaner look.  Delete entries you don't want hidden or edit them according to your needs.
+
+- Status Bar
+- Speedometer
+- Report Button
+- Menu Bar Buttons (Main, Sound &amp; Friends) *[Disable/Remove All Buttons]
+- Menu Bar Buttons (Main, Sound &amp; Friends) *[Hide All Buttons]
+- Menu Bar Main Button Pulsation
+- Menu Bar Friends Button
+- Menu Bar Friends Notification Button
+- Menu Bar Driving Message
+- Menu Bar # Of Seconds To Show Message
+- Menu Bar BG
+- Swipe In From Screen Edge Gesture
+
+[v.2] Tested with versions (4.1.0 - 4.6.0).  (5-19-16)
+
+⚑ UPDATES:
+(1-26-16) *Initial release
+(5-19-16) *Added entry to hide all menu buttons
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Cleaner Waze (v. 4.1.0 - 4.6.0)  ₅₋₁₉₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WazeMainViewController</string>
+				<key>displayName</key>
+				<string>-(bool) prefersStatusBarHidden</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>prefersStatusBarHidden</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar:  (Hide=TRUE, Show=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpeedometerVC</string>
+				<key>displayName</key>
+				<string>-(void) setShown:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShown:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Speedometer:  (Hide=FALSE, Show=TRUE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) setup</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setup</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Reoprt Button #1</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Reoprt Button #2</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) touchesEnded:(id) withEvent:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>touchesEnded:withEvent:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>Reoprt Button #3</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomMenuBar</string>
+				<key>displayName</key>
+				<string>-(void) setButtonsHidden:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setButtonsHidden:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Disable/Remove All Buttons:  (Yes=TRUE, No=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PushButton</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Hide All Buttons</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>ETAMainMenuButton</string>
+				<key>displayName</key>
+				<string>-(void) setPulsate:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPulsate:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Main Button Pulsation:  (Yes=TRUE, No=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>StartDrivingMessage</string>
+				<key>displayName</key>
+				<string>-(id) noActiveDriveLabel</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>noActiveDriveLabel</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Driving Message (Good Morning etc):  (Hide=NULL)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomViewVC</string>
+				<key>displayName</key>
+				<string>-(void) showMessage:(id) interval:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showMessage:interval:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16d24</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - # Of Sec To Show Message: (Arg#2)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>ETAFriendsButton</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Friends Button</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomMenuBar</string>
+				<key>displayName</key>
+				<string>-(id) friendButton</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>friendButton</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar - Friends Button Notification Dot:  (Hide=NULL)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomMenuBar</string>
+				<key>displayName</key>
+				<string>-(void) setNightMode:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setNightMode:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar BG #1 (Tint/Darker Text):  (Hide=TRUE, Show=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomViewVC</string>
+				<key>displayName</key>
+				<string>-(void) updateMenuBarBackgroundColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>updateMenuBarBackgroundColor</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar BG #2 (Opacity)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>GradientView</string>
+				<key>displayName</key>
+				<string>-(void) setColors:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setColors:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Menu Bar BG #3 (Blur)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>WazeMainViewController</string>
+				<key>displayName</key>
+				<string>-(bool) screenEdgePanEnabled:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>screenEdgePanEnabled:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Swipe In From Screen Edge Gesture:  (Yes=TRUE, No=FALSE)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

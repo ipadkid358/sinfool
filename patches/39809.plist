@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39809</integer>
+	<key>description</key>
+	<string>Hides all icons from the homescreen (&amp; inside folders) leaving just the labels.  Also removes the open folder background.
+
+UPDATES:
+(10-23-17) *Initial release
+(10-23-17) *Removed open folder BG
+
+[v.2] Tested with an iPad mini 4 on 10.2.  Made as a request via r/jailbreak user /u/UglyGuy1988.  (10-23-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>HS - Hide Icons</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBIcon</string>
+				<key>displayName</key>
+				<string>-(id) getIconImage:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>getIconImage:</string>
+				<key>typeEncoding</key>
+				<string>@20@0:8i16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBIconView</string>
+				<key>displayName</key>
+				<string>-(void) setWallpaperRelativeImageCenter:(CGPoint)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setWallpaperRelativeImageCenter:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8{CGPoint=dd}16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBClockApplicationIconImageView</string>
+				<key>displayName</key>
+				<string>-(void) setIcon:(id) location:(int) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setIcon:location:animated:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16i24B28</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBClockApplicationIconImageView</string>
+				<key>displayName</key>
+				<string>-(void) _setAnimating:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setAnimating:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderBackgroundView</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

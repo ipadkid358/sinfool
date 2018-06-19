@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25914</integer>
+	<key>description</key>
+	<string>Removes Time Stamps (&amp; other labels).  By default, I didn't remove info labels, i.e. "Delivered, Loading Messages..." etc.  Use the "Info Labels" entry to remove them.
+
+[v.1] Tested with an iP6+ 9.0.2.  (10-29-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Time Stamps  ₁₀₋₂₉₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKDateChatItem</string>
+				<key>displayName</key>
+				<string>-(id) loadTranscriptText</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>loadTranscriptText</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Time Stamps</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKTranscriptLabelCell</string>
+				<key>displayName</key>
+				<string>+(id) label</string>
+				<key>prefix</key>
+				<string>+</string>
+				<key>selector</key>
+				<string>label</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Info Labels</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

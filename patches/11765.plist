@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilephone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>11765</integer>
+	<key>description</key>
+	<string>Gives the Dialer Keypad a more transparent like appearance (use "Sleek View" for a true 100% transparent BG).  Everything is customizable so feel free to experiment.  Delete any entries you don't want to use.	Tested with an iP6+ 8.4.	(7-15-15)
+
+FEATURES:
+• Status Bar · (BG &amp; FG color/visibility)
+• Dialer Wallpaper · (HS or color)
+• Dialer Button · (color, alpha/visibility &amp; animation)
+• Call Button/Icon · (color &amp; visibility)
+• Tab Bar Image/Label/Backdrop · (color &amp; visibility)
+
+⚑ UPDATES:	
+(7-16-14) *Original release
+(10-31-14) *Added Tab Bar Image Color
+(11-4-14) *Confimed iOS 8 support
+(7-10-15) *Confirmed 8.3/8.4 support, changed some methods &amp; added more color options etc.
+(7-13-15) *Added method for status bar color fix
+(7-15-15) *Changed/added two methods
+
+FYI:	For an even sleeker appearance, try theses patches...
+
+➠ Sleek View (SpringBoard section)
+➠ Dialer Is Numeric Only
+
+ ★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:	goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Dialer • Keypad Is Transparent (Customizable)  ₇₋₁₅₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarNewUIStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(id) initWithRequest:(id) backgroundColor:(id) foregroundColor:(id) hasBusyBackground:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithRequest:backgroundColor:foregroundColor:hasBusyBackground:</string>
+				<key>typeEncoding</key>
+				<string>@44@0:8@16@24@32B40</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar Visibility/Colors:  Hide=(Return Value):NULL, BG Color=(Arg#2), FG Color=(Arg#3)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>3</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:0,0,0,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarNewUIStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(bool) isTranslucent</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isTranslucent</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PHHandsetDialerLCDView</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PHHandsetDialerView</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Dialer Wallpaper Color</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PHHandsetDialerNumberPadButton</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PHHandsetDialerView</string>
+				<key>displayName</key>
+				<string>-(id) dialerColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>dialerColor</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPNumberPadButton</string>
+				<key>displayName</key>
+				<string>-(void) setColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,127,0,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPNumberPadButton</string>
+				<key>displayName</key>
+				<string>-(double) alphaOutsideAndInsideRing</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>alphaOutsideAndInsideRing</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(void) setAlphaInsideRing:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setAlphaInsideRing:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Dialer Button Alpha/Visibility: (0.0-1.0 Higher #=Darker) ie.  0=Hide/None, 0.05=Very Light, 0.25=Darker, 0.5=Half, 1=Full etc.</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<real>0.5</real>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPPathView</string>
+				<key>displayName</key>
+				<string>-(void) setFillColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setFillColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Dialer Button Color</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,255,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(int) animationStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>animationStyle</string>
+				<key>typeEncoding</key>
+				<string>i16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Dialer Button Animation:	0=After Pressed, 1=As Pressed, 2=None</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPSuperBottomBarButton</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Call Button Visibility/Color:  Show=Set Color, Hide=pass-through	[iOS GREEN=4CD964]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPSuperBottomBarButton</string>
+				<key>displayName</key>
+				<string>-(id) initWithTitle:(id) icon:(id) color:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTitle:icon:color:</string>
+				<key>typeEncoding</key>
+				<string>@40@0:8@16@24@32</string>
+			</dict>
+			<key>name</key>
+			<string>Call Button Icon "✆" Visibility:	(Arg#2): Show=pass-through, Hide=NULL</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBarButton</string>
+				<key>displayName</key>
+				<string>-(void) _setContentTintColor:(id) forState:(unsigned long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setContentTintColor:forState:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16Q24</string>
+			</dict>
+			<key>name</key>
+			<string>Unselected Tab Bar Image Color [iOS GRAY=929292]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:146,146,146,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBarSwappableImageView</string>
+				<key>displayName</key>
+				<string>-(id) initWithImage:(id) alternateImage:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithImage:alternateImage:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Bar Image:	Hide=NULL, Show=pass-through</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBarButton</string>
+				<key>displayName</key>
+				<string>-(id) initWithImage:(id) selectedImage:(id) label:(id) withInsets:(UIEdgeInsets)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithImage:selectedImage:label:withInsets:</string>
+				<key>typeEncoding</key>
+				<string>@72@0:8@16@24@32{UIEdgeInsets=dddd}40</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Bar Label - (Arg#3):	Hide=NULL, Show=pass-through</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBar</string>
+				<key>displayName</key>
+				<string>-(bool) _backgroundNeedsUpdate</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_backgroundNeedsUpdate</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Bar Background:  Hide=FALSE, Show=pass-through</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

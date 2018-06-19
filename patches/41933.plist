@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.cw.fullepisodes.ios</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>41933</integer>
+	<key>description</key>
+	<string>Provides the following enhancements for the CW Network app.  For now, you can only skip commercials by tapping the 10 second forward &amp; back buttons.  So basically, this skipping workaround requires you to press forward &amp; then backward every time you want to skip a commercial.
+
+* Faster Startup
+* No Station ID Preroll
+* Skip Commercials
+
+NOTE:  Consider this patch as a workaround which may be buggy.
+
+[v.1] Tested with the CW Network app version 2.15.0.1624.  Requested by /u/GreenJohnnyPolo.  (4-13-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>[AIO] Faster Startup, No Station ID Preroll &amp; Skip Commercials (v. 2.15.0)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CWSplashScreenStaticImage</string>
+				<key>displayName</key>
+				<string>-(void) setIsSplashVideo:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setIsSplashVideo:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CWSplashVideoView</string>
+				<key>displayName</key>
+				<string>-(void) setPlayer:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPlayer:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>DSMLinearVideoAdsProvider</string>
+				<key>displayName</key>
+				<string>-(void) setEnabled:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setEnabled:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

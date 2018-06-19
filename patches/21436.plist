@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.waze.iphone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>21436</integer>
+	<key>description</key>
+	<string>Removes the Report Button.  Report hazards via 3 finger tap or wave gestures instead.
+
+[v.2] Tested with versions 3.9.4 &amp; 4.1.0.  (1-26-16)
+
+⚑ UPDATES:
+(6-1-15) *Initial release
+(1-26-16) *Updated
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Report Button  ₁₋₂₆₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BottomBar</string>
+				<key>displayName</key>
+				<string>-(void) setReportButton:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setReportButton:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>v. 3.9.4</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) setup</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setup</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BaseReportButton</string>
+				<key>displayName</key>
+				<string>-(void) touchesEnded:(id) withEvent:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>touchesEnded:withEvent:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

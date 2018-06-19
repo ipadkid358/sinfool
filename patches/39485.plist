@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.siriusxm.siriusxmonline</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39485</integer>
+	<key>description</key>
+	<string>Allows you to go (back or forward) to any track via the scrubber or the "AVAILABLE SEGMENTS" drop down menu list.  Also provides an option to disable the "SKIP LIMIT REACHED" popup.
+
+[v.1] Tested on app version 4.1.3.  Made as a request via Reddit messages.  (9-24-17)</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Enable Selection Of All Tracks (v. 4.1.3)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SkipEvent</string>
+				<key>displayName</key>
+				<string>-(long long) skipStatus</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>skipStatus</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>No "SKIP LIMIT REACHED" Popup: (Hide=0, Show=P)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>DMCAInfo</string>
+				<key>displayName</key>
+				<string>-(long long) dmcaContentType</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>dmcaContentType</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

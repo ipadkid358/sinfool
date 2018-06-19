@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27796</integer>
+	<key>description</key>
+	<string>Changes/sets auto-lock duration to "1" minute for iPhones and "5" (or "2") minutes for iPads.
+
+(iPad users desiring "2" minutes should delete the unit specified below.)
+
+* Useful for those who always have "Low Power Mode" enabled but don't like the 30 sec auto lock restriction.
+
+⚠️WARNING:  Overrides auto-lock duration at all times!!! (i.e. NOT just while in low power mode &amp; therefore the time duration at Settings&gt;General&gt;Auto-Lock is irrelevant)
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/jailbreak.  (2-18-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Low Power Mode - 1 &amp; 5 (or 2) Minute Auto-Lock  ₂₋₁₈₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBacklightController</string>
+				<key>displayName</key>
+				<string>-(void) autoLockPrefsChanged</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>autoLockPrefsChanged</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>iPads  &gt;&gt;&gt;DELETE THIS UNIT&lt;&lt;&lt;  ...for "2 Minutes"</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBacklightController</string>
+				<key>displayName</key>
+				<string>-(void) adjustIdleLockDuration:(double*) idleDimDuration:(double*)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>adjustIdleLockDuration:idleDimDuration:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8^d16^d24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

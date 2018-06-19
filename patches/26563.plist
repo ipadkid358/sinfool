@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26563</integer>
+	<key>description</key>
+	<string>Perpetually shows the LS battery charging screen when initially connected to power.  Once the screen dims/is locked... then the "% Charged" text will always show underneath the clock/time.  For an extra reminder, it also includes the option to always show "% Charged" text in place of the date &amp; the battery screen view will show when disconnecting from power just like it does when you connect to power.
+
+Useful for those who want to be reminded when your device is charging or those who just want to view the battery screen view longer.
+
+⚑UPDATES:
+(11-24-15) *Initial release
+(8-10-16) *Added option to always show "% Charged" in replace of date text and show battery view when disconnecting from power.
+
+[v.2] Tested with an iP6+ 9.0.2 &amp; 9.3.3.  Made after reading a request via r/jailbreak.  (8-10-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - Always Show Charging  ₈₋₁₀₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIController</string>
+				<key>displayName</key>
+				<string>-(bool) isConnectedToExternalChargingSource</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isConnectedToExternalChargingSource</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Always Show % Charged Text &amp; Battery When Disconnecting</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenBatteryChargingViewController</string>
+				<key>displayName</key>
+				<string>-(void) _visibilityTimerFired:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_visibilityTimerFired:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(void) _addBatteryChargingViewAndShowBattery:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_addBatteryChargingViewAndShowBattery:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

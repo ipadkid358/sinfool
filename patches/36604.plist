@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>36604</integer>
+	<key>description</key>
+	<string>Stops auto slide to passcode screen on failed Touch ID attempts.
+
+NOTE: Only tested with "Rest Finger to Open" option enabled at Settings-&gt; Acesssibility -&gt; Home Button
+
+ Minor known issues... (if you find more, please post them in the comments)
+
+* After resprings, the LS will show instead of the passcode screen.
+* When on the passcode screen, if button entries are deleted then the next Touch ID attempt may take two scans/presses to unlock instead of one.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via r/jailbreak.  (4-6-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - No Auto Slide To Passcode Screen On Failed Touch ID Attempt</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenManager</string>
+				<key>displayName</key>
+				<string>-(void) setPasscodeVisible:(bool) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPasscodeVisible:animated:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

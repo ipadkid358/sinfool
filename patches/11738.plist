@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>11738</integer>
+	<key>description</key>
+	<string>Disables the Dock blurred background and removes the white transverse line above the dock.	(7.1.x)
+
+NOTE: The other patch to remove the dock blur for ios7 doesn't work so I made this one. </string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Dock - No Background with No White Line (7.1.x)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDockView</string>
+				<key>displayName</key>
+				<string>-(id) _newBackgroundImage</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_newBackgroundImage</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) _newBackgroundImage</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDockView</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundAlpha:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundAlpha:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4f8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setBackgroundAlpha:(float)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBHighlightView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect) highlightAlpha:(float) highlightHeight:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:highlightAlpha:highlightHeight:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8f24f28</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) initWithFrame:(CGRect) highlightAlpha:(float) highlightHeight:(float)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

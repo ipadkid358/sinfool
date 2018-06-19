@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39636</integer>
+	<key>description</key>
+	<string>Removes the top separator when scrolling through notifications on the lockscreen.
+
+UPDATES:
+(10-7-17) *Initial release
+(10-26-17) *Removed separator from showing when multiple notifications are present and notification is scrolled &amp; stopped only partially shown
+
+[v.2] Tested with an iPad mini 4 10.2.  Requested via r/jailbreak user /u/asoksevil.  (10-26-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>LS - No Top Separator When Scrolling Notifications</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDashBoardNotificationListViewController</string>
+				<key>displayName</key>
+				<string>-(void) notificationListViewControllerDidScroll:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>notificationListViewControllerDidScroll:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDashBoardNotificationListViewController</string>
+				<key>displayName</key>
+				<string>-(void) notificationListViewControllerDidEndScrolling:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>notificationListViewControllerDidEndScrolling:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

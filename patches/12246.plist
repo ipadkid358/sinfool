@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.golfchannel.gcliveextra</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>12246</integer>
+	<key>description</key>
+	<string>Bypass login and no ads.  Tested with version 3.2.5.  (8-8-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Bypass Login &amp; No Ads</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NBCSEventItem</string>
+				<key>displayName</key>
+				<string>-(BOOL) free</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>free</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(BOOL) free</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>GADAdFetcher</string>
+				<key>displayName</key>
+				<string>-(id) initWithDelegate:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithDelegate:</string>
+				<key>typeEncoding</key>
+				<string>@12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(id) initWithDelegate:(id)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PTMediaPlayerItem</string>
+				<key>displayName</key>
+				<string>-(BOOL) skipLivePreroll</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>skipLivePreroll</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(BOOL) skipLivePreroll</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

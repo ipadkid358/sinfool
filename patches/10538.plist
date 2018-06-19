@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilephone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>10538</integer>
+	<key>description</key>
+	<string>Mutes dialer key press sound. (4-26-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Mute Dialer Key Press Sound</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPDialerSoundController</string>
+				<key>displayName</key>
+				<string>-(void) playSoundForDialerCharacter:(unsigned int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>playSoundForDialerCharacter:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4I8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) playSoundForDialerCharacter:(unsigned int)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

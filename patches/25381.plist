@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25381</integer>
+	<key>description</key>
+	<string>Removes the background/backdrop from alert sheets &amp; the cancel button.
+
+[v.2] Tested with an iP6+ 9.3.3.  (11-27-16)
+
+⚑ UPDATES:
+(10-19-15) *Initial release
+(11-27-16) *Changed method for recent Flex 3 update
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Alerts - No Backdrop  ₁₁₋₂₇₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIAlertControllerView</string>
+				<key>displayName</key>
+				<string>-(BOOL) shouldHaveBackdropView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldHaveBackdropView</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Backdrop</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UIAlertControlleriOSActionSheetCancelBackgroundView</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cancel Button</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

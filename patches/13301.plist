@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.spotify.client</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>13301</integer>
+	<key>description</key>
+	<string>Removes big green shuffle button.  Tested with version 1.7.1 &amp; 1.8.0.  (10-2-14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No Shuffle Button</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTActionButton</string>
+				<key>displayName</key>
+				<string>-(void) setFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setFrame:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) setFrame:(CGRect)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

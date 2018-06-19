@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>36171</integer>
+	<key>description</key>
+	<string>Changes the text font to either a bold or italic style for all bubble headers and notification content on the LS, NC and notification banners.  By default, it's set to italic.
+
+[v.1] Tested with an iPad mini 4 10.2.  (3-22-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS/NC - Font Style (Bold or Italic)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCLookViewFontProvider</string>
+				<key>displayName</key>
+				<string>-(id) nc_preferredFontForTextStyle:(id) hiFontStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>nc_preferredFontForTextStyle:hiFontStyle:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:8@16q24</string>
+			</dict>
+			<key>name</key>
+			<string>(Arg#3): (Italic=1, Bold=2)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

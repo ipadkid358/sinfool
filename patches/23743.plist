@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>23743</integer>
+	<key>description</key>
+	<string>Forces the keyboard to use a specific type.  I also added a custom return key option which can be customized or deleted.	
+
+I've made some suggestions below however feel free to experiment.  This may be more useful on a per app specific basis (i.e. you always want a specific KB for a specific app) in which I would suggest replicating this patch for said app.	Made as a request via r/jailbreak.
+
+[v.1] Tested w/iP6+ 8.4.	(8-11-15)
+
+(Keyboard Values):
+
+0 = Standard (i.e. no extra period key)
+2 = Open w/@123 KB, no emoji key
+3 = No space bar/dictation key (replaced by ".", "/" and ".com" keys)
+4 = # pad
+5 = # pad + "+*#" key
+7 = No dictation key (adds "@" and "." keys)
+8 = # pad + "." key
+9 = No return key (replaced by "@" and "#" keys)
+10 = Adds "." key and changes "Return" to "Go"
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>KB • Force Keyboard Type  ₈₋₁₁₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITextInputTraits</string>
+				<key>displayName</key>
+				<string>-(long long) keyboardType</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>keyboardType</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Keyboard Type:	(see suggestions above)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>10</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardLayoutStar</string>
+				<key>displayName</key>
+				<string>-(void) setReturnKeyEnabled:(bool) withDisplayName:(id) withType:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setReturnKeyEnabled:withDisplayName:withType:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8B16@20i28</string>
+			</dict>
+			<key>name</key>
+			<string>Custom Return Key/Type:  (Arg#2): Custom Text (Arg#3): Force Key Type: 0=Standard, 1=Blue, pass-through=Stock</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>®</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>argument</key>
+					<integer>3</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>19549</integer>
+	<key>description</key>
+	<string>Customizes/hides the following aspects of Control Center... Use TRUE, FALSE &amp; (NULL) to hide/enable options.  Unless listed otherwise... pass-through equals stock iOS &amp; (NULL) equals hide/disable.	Tested with iP6+ &amp; iPad mini2 8.1.  UPDATED (4-5-15)
+
+• Control Center
+• CC Height
+• Allow Swipe Gesture (SB/Apps)
+• Show Tab On First Swipe
+• Use Bounce
+• Shadow Above CC
+• Control Alpha (ghost effect)
+• Hide LS Grabber
+• Grabber
+• Flat Grabber
+• Highlight Color (slider/glyph)
+• Highlight Alpha 
+• Toggles (section)
+• Brightness (section)
+• Brightness Dark Background
+• Media Controls (section)
+• AirDrop (section)
+• AirPlay (section)
+• Quick Launch (section)
+• Quick Launch Circle Buttons
+
+⚠️ NOTE:	By default, most settings are set to stock BUT the CC Height will most likely need to be adjusted according to your particular device/setup OR just delete this unit to use stock height.  I've listed some general suggestions but values can be changed as necessary.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Control Center Hider/Customizer  ₄₋₅₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterController</string>
+				<key>displayName</key>
+				<string>-(id) init</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>init</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Control Center</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentContainerView</string>
+				<key>displayName</key>
+				<string>-(void) setContentHeight:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setContentHeight:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>⚠️Height: {(stock ios approx) iP5/S:436, iP6+:429, iPad:184, stock:delete this unit}</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>429</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterController</string>
+				<key>displayName</key>
+				<string>-(bool) allowShowTransitionSystemGesture</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>allowShowTransitionSystemGesture</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Allow Swipe Up Gesture (for SB/Apps)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIController</string>
+				<key>displayName</key>
+				<string>-(bool) shouldShowControlCenterTabControlOnFirstSwipe</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldShowControlCenterTabControlOnFirstSwipe</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Show Grabber Tab On First Swipe</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterSettings</string>
+				<key>displayName</key>
+				<string>-(bool) useNewBounce</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>useNewBounce</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Use Bounce</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterSettings</string>
+				<key>displayName</key>
+				<string>-(double) backgroundAlphaFactor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>backgroundAlphaFactor</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Shadow Above CC:	{0=none}</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterSettings</string>
+				<key>displayName</key>
+				<string>-(void) setControlAlpha:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setControlAlpha:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Control Alpha (ghost effect): {range=0.0 to 1}</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenView</string>
+				<key>displayName</key>
+				<string>-(void) setBottomGrabberHidden:(bool) forRequester:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBottomGrabberHidden:forRequester:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8B16@20</string>
+			</dict>
+			<key>name</key>
+			<string>Hide LS Grabber</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBChevronView</string>
+				<key>displayName</key>
+				<string>-(id) initWithColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithColor:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Grabber (w/CC open but also hides Lockscreen NC &amp; CC grabbers ):	{Argument #1}</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterGrabberView</string>
+				<key>displayName</key>
+				<string>-(id) chevronView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>chevronView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Flat Grabber (w/CC open):  {pass-through=NO, (NULL)=YES}</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterSettings</string>
+				<key>displayName</key>
+				<string>-(void) setHighlightColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setHighlightColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Highlight Color (slider/glyph)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,255,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterSettings</string>
+				<key>displayName</key>
+				<string>-(void) setHighlightAlpha:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setHighlightAlpha:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Highlight Alpha (of Glyphs while sliding):	{range=0.0 to 1}</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentView</string>
+				<key>displayName</key>
+				<string>-(id) settingsSection</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>settingsSection</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Toggles (section)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentView</string>
+				<key>displayName</key>
+				<string>-(id) brightnessSection</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>brightnessSection</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Brightness (section)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBCCBrightnessSectionController</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldDarkenBackground</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldDarkenBackground</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Brightness Dark Background</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentView</string>
+				<key>displayName</key>
+				<string>-(id) mediaControlsSection</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>mediaControlsSection</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Media Controls (section)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBCCAirStuffSectionController</string>
+				<key>displayName</key>
+				<string>-(void) setAirDropEnabled:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setAirDropEnabled:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>AirDrop (section)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentView</string>
+				<key>displayName</key>
+				<string>-(id) airplaySection</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>airplaySection</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>AirPlay (section)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlCenterContentView</string>
+				<key>displayName</key>
+				<string>-(id) quickLaunchSection</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>quickLaunchSection</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Quick Launch (section)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIControlCenterButton</string>
+				<key>displayName</key>
+				<string>-(bool) isCircleButton</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isCircleButton</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Quick Launch Uses Circle Buttons</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

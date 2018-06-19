@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26983</integer>
+	<key>description</key>
+	<string>Disables the lock/sleep/power button.
+
+*Useful if you have a broken power button which triggers inadvertently.
+
+NOTE:  When using this patch, I suggest using Activator to assign an event/gesture to lock your device i.e. "Anywhere&gt;(any event/gesture)&gt;Lock Device".
+
+⚑ UPDATES:
+(12-18-15) *Initial release
+(10-9-16) *Changed patch title from "Disable Lock/Sleep/Power Button"
+
+[v.1] Tested with an iP6+ 9.0.2.  Made as a request via r/jailbreak.  (10-9-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>ButtonDisabler - Lock Button  ₁₀₋₉₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(void) _lockButtonDown:(__IOHIDEvent*) fromSource:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_lockButtonDown:fromSource:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8^{__IOHIDEvent=}16i24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(void) _lockButtonUp:(__IOHIDEvent*) fromSource:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_lockButtonUp:fromSource:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8^{__IOHIDEvent=}16i24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

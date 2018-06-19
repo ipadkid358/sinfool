@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobileslideshow</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31738</integer>
+	<key>description</key>
+	<string>Disables auto zoom of photos when scrolling etc. so full images can be seen without having to pinch or double tap.
+
+⚑ UPDATES:
+(10-18-16) *Initial release
+(10-19-16) *Added 9.x support
+
+[v.2] Tested with an iP6+ 9.3.3 &amp; iP5 9.0.2.  Made as a request via r/jailbreak.  (10-19-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Auto Zoom (Full Photos)  ₁₀₋₁₉₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpSettings</string>
+				<key>displayName</key>
+				<string>-(double) maximumInitialZoomToFillScaleForCompactSizeClass</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>maximumInitialZoomToFillScaleForCompactSizeClass</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpSettings</string>
+				<key>displayName</key>
+				<string>-(void) setMaximumInitialZoomToFillScaleForCompactSizeClass:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setMaximumInitialZoomToFillScaleForCompactSizeClass:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpTilingLayout</string>
+				<key>displayName</key>
+				<string>-(float) tileContentMaximumInitialZoomToFillScale</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>tileContentMaximumInitialZoomToFillScale</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUOneUpTilingLayout</string>
+				<key>displayName</key>
+				<string>-(void) setTileContentMaximumInitialZoomToFillScale:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTileContentMaximumInitialZoomToFillScale:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4f8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

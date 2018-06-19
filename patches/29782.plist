@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>29782</integer>
+	<key>description</key>
+	<string>Removes folder icons/labels &amp; disables selection of the blank space left in its place.
+
+- This patch can be useful "IF" you don't use folders and want a rudimentary alternative to some other tweaks like Anchor/GridLock, or tweaks that hide apps (but are still accessible from SpotLight) or just to make blank icon spaces etc.
+
+Directions:
+
+- (for Blank Icons):  Make any safari bookmark/web clip &amp; put it into a folder.   Enable the patch/respring.  Position surrounding icons to achieve your desired result.
+- (to Hide Apps from the HS):  Put apps in a folder &amp; position it as the last icon on your HS.  Enable the patch/respring.
+
+You must disable the patch whenever you'd like to add additional apps/web clips to a folder.
+
+[v.1] Tested with an iP6+ 9.3.3.  (8-7-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Folder - Disable Icons/Labels (Hide Apps, Blank Icons &amp; Anchor/GridLock Alternative)  ₈₋₇₋₁</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconView</string>
+				<key>displayName</key>
+				<string>-(void) setIcon:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setIcon:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

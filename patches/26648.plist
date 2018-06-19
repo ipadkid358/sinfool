@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26648</integer>
+	<key>description</key>
+	<string>Makes the home screen (HS) status bar stay the same size as the Larger lock screen (LS) status bar.	
+
+So, if your LS status bar hasn't been customized... then the stock larger sized LS status bar will remain on the HS after unlocking.  Likewise, if your LS status bar is hidden... then it will also remain hidden on the HS.
+
+KNOWN ISSUES:  Causes the double sized SB (i.e. during a phone call) to disappear on the HS &amp; reverts the status bar size back to the small size until after a call has ended &amp; the device is locked/unlocked again.
+
+[v.1] Tested with iOS 7/8/9.  Made as a request via r/jailbreak.  (11-29-15)
+
+(11-30-15) *Changed title
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Status Bar - Larger LS Size  ₁₁₋₂₉₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIApplication</string>
+				<key>displayName</key>
+				<string>-(void) setStatusBarStyle:(long long) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setStatusBarStyle:animated:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8q16B24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>22727</integer>
+	<key>description</key>
+	<string>Hides the following items in Notification Center...  Tested on iP6+ 8.4.  (7-17-15)
+
+UPDATES:
+(7-13-15) *Initial release
+(7-17-15) *added separator &amp; changed grabber method
+
+• Status bar
+• Top &amp; Bottom Separator
+• Today's Date
+• Headers
+• Headers (but keeps space) *[disabled]
+• Cell Separators
+• Entire Footer (both items below) *[disabled]
+• Edit Button *[disabled]
+• Widget ID's Footer (ie. Weather/Stocks™)
+• Grabber
+
+By default, everything is hidden excecpt items followed by *[disabled].  Unless noted otherwise, change values to "pass-through" to show or "null"/"0"/delete to hide items.
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>NC • Hiding Options (Customizable)  ₇₋₁₇₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(void) _loadStatusBar</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_loadStatusBar</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar:  Show=DELETE THIS ENTRY</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationSeparatorView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect) mode:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:mode:</string>
+				<key>typeEncoding</key>
+				<string>@56@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16q48</string>
+			</dict>
+			<key>name</key>
+			<string>Top &amp; Bottom Separator</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTodayViewController</string>
+				<key>displayName</key>
+				<string>-(id) todayTableHeaderView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>todayTableHeaderView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Today's Date</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBulletinViewController</string>
+				<key>displayName</key>
+				<string>-(double) tableView:(id) heightForHeaderInSection:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>tableView:heightForHeaderInSection:</string>
+				<key>typeEncoding</key>
+				<string>d32@0:8@16q24</string>
+			</dict>
+			<key>name</key>
+			<string>Headers</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UITableViewHeaderFooterContentView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>Headers (but keeps space):	[Note: "Header" unit above must be set to 'pass-through' for this entry to apply] *[disabled]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UITableViewCellSeparatorView</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Cell Separator:  Show=DELETE THIS ENTRY</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTodayTableFooterView</string>
+				<key>displayName</key>
+				<string>-(id) initWithFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithFrame:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>Entire Footer (Edit Button &amp; Weather/Stocks) *[disabled]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationVibrantButton</string>
+				<key>displayName</key>
+				<string>-(id) initWithColorSettings:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithColorSettings:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Edit Button *[disabled]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBTodayViewController</string>
+				<key>displayName</key>
+				<string>-(id) todayTableFooterView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>todayTableFooterView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Weather/Stocks™ Footer</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(void) _loadGrabberContentView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_loadGrabberContentView</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Grabber:	Show=DELETE THIS ENTRY</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

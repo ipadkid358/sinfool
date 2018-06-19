@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>28076</integer>
+	<key>description</key>
+	<string>Fixes the iOS 9 reload issue of pages stealing focus from the URL search bar.  This issue usually occurs after you've just opened Safari.
+
+⚠️IMPORTANT NOTE:  Conflicts with the tweak "SafariFix" so uninstall it before using this patch.  This should do the same &amp; doesn't have the missing cancel/reload icons bug.
+
+[v.1] Only tested with an iP5 9.0.2.  Made as a request via r/jailbreak.  (3-11-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Safari Search Bar Reload Fix  ₃₋₁₁₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BrowserController</string>
+				<key>displayName</key>
+				<string>-(void) tabDocumentDidStartLoading:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>tabDocumentDidStartLoading:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.burbn.instagram</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>41804</integer>
+	<key>description</key>
+	<string>Removes suggestions from feeds and the profile page drop down arrow.
+
+⚑ UPDATES:
+(4-4-18) *Initial release
+(4-4-18) *Removed suggestions from the profile page
+
+[v.2] Tested with Instagram version 39.0.  (4-4-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>No More Suggestions For You (v. 39.0)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IGHScrollAYMFSectionController</string>
+				<key>displayName</key>
+				<string>-(long long) numberOfItems</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>numberOfItems</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IGProfileAYMFSectionController</string>
+				<key>displayName</key>
+				<string>-(long long) numberOfItems</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>numberOfItems</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

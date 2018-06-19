@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobileslideshow</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>41185</integer>
+	<key>description</key>
+	<string>Opens the "Photos" tab to the "Collections" view*.
+
+*After initial app startup/after app is first loaded into memory.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Requested by /u/iMikeyB.  (3-6-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Open "Photos" Tab To "Collections" View</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUGridZoomLevelInfo</string>
+				<key>displayName</key>
+				<string>-(bool) wantsAutomaticContentOffsetAdjustment</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>wantsAutomaticContentOffsetAdjustment</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Open Collections At Bottom: (Yes=F, Stock=P)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUMomentsZoomLevelManager</string>
+				<key>displayName</key>
+				<string>-(unsigned long long) preferredDefaultZoomLevel</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>preferredDefaultZoomLevel</string>
+				<key>typeEncoding</key>
+				<string>Q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PUTabbedLibraryViewController</string>
+				<key>displayName</key>
+				<string>-(int) _contentModeForNavigationController:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_contentModeForNavigationController:</string>
+				<key>typeEncoding</key>
+				<string>i24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

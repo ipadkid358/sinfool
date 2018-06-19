@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.VoiceMemos</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>8737</integer>
+	<key>description</key>
+	<string>Fixes the status bar bug caused by the JB, (well, sort of).  This changes the black status bar elements back to white.                            ------------------------------------------------------This is good for those who haven't used any other fixes such as StatusBarFix2 or Flex patches that remove the status bar.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Fix Status Bar JB Bug</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarNewUIForegroundStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(id) initWithHeight:(float) legibilityStyle:(int) tintColor:(id) backgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithHeight:legibilityStyle:tintColor:backgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:4f8i12@16@20</string>
+			</dict>
+			<key>name</key>
+			<string>White Elements for Status Bar</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>3</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:255,255,255,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

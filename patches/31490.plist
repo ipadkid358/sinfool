@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31490</integer>
+	<key>description</key>
+	<string>Stops auto slide to passcode screen on failed TouchID attempts.
+
+Note:  Also stops auto slide to LS when the passcode screen's "Cancel" button is pressed.
+
+[v.1] Tested with an iP6+ 9.3.3.  Made as a request via r/jailbreak.  (10-3-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - No Auto Slide To Passcode Screen On Failed TouchID Attempt  ₁₀₋₃₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewControllerBase</string>
+				<key>displayName</key>
+				<string>-(void) setPasscodeLockVisible:(bool) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPasscodeLockVisible:animated:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

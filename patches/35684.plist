@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>35684</integer>
+	<key>description</key>
+	<string>Hides the following options in Notification Center.  Delete the respective units of items you want shown.
+
+- Status Bar
+- Top Separator
+- Bottom Separator
+- "No Notifications" Text
+- Grabber
+- Page Dots
+
+Leave a comment if you want additional items hidden.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via r/jailbreak.  (3-9-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>NC - Hiding Options (Customizable)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(void) _loadStatusBar</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_loadStatusBar</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPUINavigationBar</string>
+				<key>displayName</key>
+				<string>-(void) showSeparator:(bool) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showSeparator:animated:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8B16B20</string>
+			</dict>
+			<key>name</key>
+			<string>Top Separator</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationSeparatorView</string>
+				<key>displayName</key>
+				<string>-(void) updateForCurrentState</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>updateForCurrentState</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Bottom Separator</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCNotificationNoContentView</string>
+				<key>displayName</key>
+				<string>-(void) layoutSubviews</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>layoutSubviews</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>"No Notifications" Text</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(void) _loadGrabberContentView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_loadGrabberContentView</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Grabber</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBNotificationCenterViewController</string>
+				<key>displayName</key>
+				<string>-(void) _loadPageControl</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_loadPageControl</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Page Dots</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

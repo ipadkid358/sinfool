@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilephone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>10103</integer>
+	<key>description</key>
+	<string>Customizes the Dialer Keypad Button.  Change the button's size, shape and visibility.  By default, the inside button is invisible.  Experiment with the values.  For even more options...combine this patch with some of my other "Dialer Keypad Button.." titled patches.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Dialer Keypad Button Customizer</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(void) setCornerRadius:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setCornerRadius:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4f8</string>
+			</dict>
+			<key>name</key>
+			<string>Adjusts Corner Radius</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>23</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPRevealingRingView</string>
+				<key>displayName</key>
+				<string>-(void) setDefaultRingStrokeWidth:(float)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setDefaultRingStrokeWidth:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4f8</string>
+			</dict>
+			<key>name</key>
+			<string>Adjusts Ring Width</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>3</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPPathView</string>
+				<key>displayName</key>
+				<string>-(void) setPath:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPath:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>*** DELETE THIS ENTRY ***  To Display Inside Button</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

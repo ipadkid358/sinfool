@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20435</integer>
+	<key>description</key>
+	<string>Changes stock Green &amp; Gray colored Balloons to Blue.  By default, I didn't change the Gray Balloon's Black Text color.  Use the "White Text (left balloon)" entry to make it white.  Made as a request via r/flextweak.  Tested with an iP6+ 8.1.  (4-10-15)
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Blue Balloons  ₄₋₁₀₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKColoredBalloonView</string>
+				<key>displayName</key>
+				<string>-(BOOL) color</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>color</string>
+				<key>typeEncoding</key>
+				<string>c16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKMessagePartChatItem</string>
+				<key>displayName</key>
+				<string>-(BOOL) color</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>color</string>
+				<key>typeEncoding</key>
+				<string>c16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>White Text (left balloon)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

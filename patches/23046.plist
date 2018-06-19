@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>23046</integer>
+	<key>description</key>
+	<string>Forces the Notification Banner to remain visible until one of the following happens...
+
+(1)  Banner is manually dismissed
+(2)  Current screen is left
+(3)  Screen dims
+(4)  Device is locked
+
+- This differs from the other two sticky banner patches ("Sticky Banner" &amp; "Van Ner Pls. Stick Around") in the following ways...  Tested on an iP6+ 8.4.  (7-21-15)
+
+• Actively updates banner content
+• Banner dismisses itself
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Banners • Sticky Notification Banner  ₇₋₂₁₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBannerController</string>
+				<key>displayName</key>
+				<string>-(void) _dismissIntervalElapsed</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_dismissIntervalElapsed</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

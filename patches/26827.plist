@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26827</integer>
+	<key>description</key>
+	<string>Brings back the iOS 7/8 style switcher on iOS 9 while also providing the following customizable options...
+
+- Disable Splashscreens (system wide)
+- Cards - Splashscreen Previews
+- Cards - Transparent Previews
+- Cards - Portrait Previews In Landscape
+- Cards - Removability
+- Cards - Remove Scaled Overlay Image
+- Cards - Size ⚠️
+- Cards - Open With... HS, Current or Last App
+- Icons - Open With... HS, Current or Last App
+- Icons - Visibility
+- Icons - Tapability
+- Animation - Remove Dismiss Animation (with caveats listed below)
+- Animation - Remove Icon Slide Left Animation On App Card Open
+
+⚠️NOTE:  Delete the "Cards - Size" entry if not using.
+
+⚑ UPDATES:
+(12-9-15) *Initial release
+(12-13-15) *Added scaled &amp; translucency methods for more options
+(2-23-16) *Added option to remove icon slide animation
+
+[v.3] Tested with an iP6+ 9.0.2.  (2-23-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Switcher - Legacy Style (Customizable)  ₂₋₂₃₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBApplication</string>
+				<key>displayName</key>
+				<string>-(bool) shouldLaunchPNGless</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldLaunchPNGless</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Splashscreens (System Wide):  [Hide=TRUE]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSnapshotView</string>
+				<key>displayName</key>
+				<string>-(bool) shouldTransitionToDefaultPng</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>shouldTransitionToDefaultPng</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Splashscreen Previews:  [Yes=TRUE]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SBAppSwitcherSnapshotContext</string>
+				<key>displayName</key>
+				<string>-(id) snapshot</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>snapshot</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Transparent Previews:  [Yes=NULL]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(long long) _windowInterfaceOrientation</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_windowInterfaceOrientation</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Portrait Previews In Landcape:  [Yes=1]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(bool) switcherScroller:(id) isDisplayItemRemovable:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>switcherScroller:isDisplayItemRemovable:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Removability:  [No=FALSE]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(void) _updatePageViewScale:(double) xTranslation:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updatePageViewScale:xTranslation:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8d16d24</string>
+			</dict>
+			<key>name</key>
+			<string>⚠️ Cards - Size:	(Arg#1): [Range (0.0 - 2.0) Stock=1] ***DELETE IF NOT USING***</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageView</string>
+				<key>displayName</key>
+				<string>-(id) overlay</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>overlay</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Remove Scaled Overlay Image:  [(YES=NULL) ***ONLY ENABLE IF "Cards - Size" IS DELETED OR "Animation - Remove Dismiss...*" IS DISABLED**</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageViewController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned long long) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8Q16B24</string>
+			</dict>
+			<key>name</key>
+			<string>Cards - Open With:  [HS=0, Current App=1, Last App=2]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherIconController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned long long) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8Q16B24</string>
+			</dict>
+			<key>name</key>
+			<string>Icons - Open With:  [HS=0, Current App=1, Last App=2]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(bool) switcherIconScroller:(id) shouldHideIconForDisplayItem:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>switcherIconScroller:shouldHideIconForDisplayItem:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>Icons - Visibility:  [Hide=TRUE]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherIconController</string>
+				<key>displayName</key>
+				<string>-(bool) iconShouldAllowTap:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>iconShouldAllowTap:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Icons - Tapability:  [No=FALSE]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIDismissSwitcherAnimationController</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id) activatingDisplayItem:(id) interactive:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:activatingDisplayItem:interactive:</string>
+				<key>typeEncoding</key>
+				<string>@36@0:8@16@24B32</string>
+			</dict>
+			<key>name</key>
+			<string>Animation - Remove Dismiss Animation/Scaled Image Overlay &amp; Allow Immediate Interaction w/Apps "If Loaded" (but if "not loaded" then no opening animation):		  [YES=(Return Value):NULL]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(id) _animationFactoryForIconAlphaTransition</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_animationFactoryForIconAlphaTransition</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Animation - Remove Icon Slide Left Animation On App/Card Open:  [Yes=NULL]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSettings</string>
+				<key>displayName</key>
+				<string>-(long long) switcherStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>switcherStyle</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSnapshotView</string>
+				<key>displayName</key>
+				<string>-(void) _updateTranslucency</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateTranslucency</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

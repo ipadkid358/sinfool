@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.navigon.NavigonNorthAmerica</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>8140</integer>
+	<key>description</key>
+	<string>Removes the external screen check so you won't see the black screen/message stating "Video output on an additional screen is not possible...".  Video output tested working via DisplayOut from Cydia. (Tested w/iP4 7.0.4)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Remove External Screen Check</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MNApplicationStartupOperation</string>
+				<key>displayName</key>
+				<string>-(void) delayedCheckForExternalScreen</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>delayedCheckForExternalScreen</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) delayedCheckForExternalScreen</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>MNApplicationStartupOperation</string>
+				<key>displayName</key>
+				<string>-(void) checkForExternalScreen</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>checkForExternalScreen</string>
+				<key>typeEncoding</key>
+				<string>v8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) checkForExternalScreen</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

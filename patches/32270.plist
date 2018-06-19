@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>32270</integer>
+	<key>description</key>
+	<string>Launches home screen apps with snapshots instead of a blank page (i.e. like how the switcher does).
+
+Useful for anyone who doesn't like this stock iOS behavior, i.e. maybe Eclipse/NightMode users etc.
+
+NOTE:  Eclipse users must turn off the "Color Loading Screens" option for this patch to work.
+
+[v.1] Tested with an iP6+ 9.3.3.  Made as a request via r/jailbreak.  (11-23-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Animations - Launch Apps With Snapshots  ₁₁₋₂₃₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBApplication</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldUseSnapshotForAppLaunchIfPossible</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldUseSnapshotForAppLaunchIfPossible</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

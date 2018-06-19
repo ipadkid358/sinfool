@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.google.chrome.ios</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>21337</integer>
+	<key>description</key>
+	<string>Disables the pull down menu.  Also includes an optional entry to disable full screen &amp; the rubberband effect when pulling down.  Made as a request via r/jailbreak.
+
+[v.1] Tested with versions 42.0.2311.47 - 45.0.2454.89.  (10-12-15)
+
+⚑ UPDATES:
+(5-25-15) *Initial release
+(10-12-15) *Confirmed still working
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Pull Down Menu  ₁₀₋₁₂₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>OverscrollActionsController</string>
+				<key>displayName</key>
+				<string>-(bool) isOverscrollActionEnabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isOverscrollActionEnabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Pull Down Menu:  Disable=FALSE</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>FullScreenController</string>
+				<key>displayName</key>
+				<string>-(bool) isUserTriggered</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isUserTriggered</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Full Screen/Rubberband Effect:  Disable=FALSE</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

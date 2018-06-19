@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilephone</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>9963</integer>
+	<key>description</key>
+	<string>Changes the Dialer Keypad Background to your home screen wallpaper.  (3/26/14)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Dialer Keypad BG uses Wallpaper</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TPBackgroundRoundedRectView</string>
+				<key>displayName</key>
+				<string>-(void) drawRect:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>drawRect:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) drawRect:(CGRect)</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+				<array/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>36924</integer>
+	<key>description</key>
+	<string>Removes the background from input text fields system wide.
+
+Also adds options to...
+
+(1) Hide the search bar background (currently hidden)
+(2) Hide the background of Safari's URL bar when tapping (currently hidden)
+
+[v.3] Tested with an iPad mini 4 10.2.  Made as a request via r/jailbreak.  (4-18-17)
+
+(4-18-17) *Initial release
+(4-18-17) *Added removal of Safari background when tapping
+(4-18-17) *Removed Message custom color option &amp; replaced with another method to fix the background from showing when using the options button
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Flat Fields</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UISearchBarBackground</string>
+				<key>displayName</key>
+				<string>-(id) _createBackgroundImageForBarStyle:(long long) alpha:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_createBackgroundImageForBarStyle:alpha:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:8q16d24</string>
+			</dict>
+			<key>name</key>
+			<string>Search Bar - Hide Background: (Arg#2) Yes=0, No=P</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFNavigationBarURLButton</string>
+				<key>displayName</key>
+				<string>-(void) _updateBackgroundImageAnimated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateBackgroundImageAnimated:</string>
+				<key>typeEncoding</key>
+				<string>v20@0:8B16</string>
+			</dict>
+			<key>name</key>
+			<string>Safari - Hide Background On Tap: (Arg#1) Yes=P, No=T</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_SFNavigationBarURLButton</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundAlphaFactor:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundAlphaFactor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UISearchBarSearchFieldBackgroundView</string>
+				<key>displayName</key>
+				<string>-(void) updateView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>updateView</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKUIBehavior</string>
+				<key>displayName</key>
+				<string>-(double) entryFieldCoverLineWidth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>entryFieldCoverLineWidth</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKUITheme</string>
+				<key>displayName</key>
+				<string>-(id) entryFieldCoverFillColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>entryFieldCoverFillColor</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

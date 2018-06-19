@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.spotify.client</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<real>6719</real>
+	<key>cloudID</key>
+	<integer>14673</integer>
+	<key>description</key>
+	<string>All in one patch for Spotify.  Tested with versions 1.2.0 - 2.1.0.  Delete any entry you don&apos;t want.  (11-12-14)
+
+FYI&apos;s/known issues:  
+(1) Versions above 1.7.1 can&apos;t use extreme quality.  
+(2) You will get an &quot;Unable to Play Song&quot; message when selecting the same song twice in the same session &amp; after playing 3 or more songs within an album.  Kill the app from multitasking to resolve this issue. 
+(3) Use the media player&apos;s shuffle button to toggle shuffling.   Note: Shuffle mode is automatically enabled whenever a specific track is selected from a playlist.  Simply toggle shuffle off to disable it.
+
+• No ads
+• Disable shuffle mode
+• Remove big green shuffle button
+• Enable scrubbing/manual skipping
+• Allow peeking at previous tracks (when not in shuffle mode)
+• Allow peeking at next tracks
+• Allow switching back to previous album views (preferably after skip limit is reached)
+• Remove skip limit message/allows peeking at next track (after skip limit is reached)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>[AIO] No Ads, No Shuffle/Button, Scrub/Skipping &amp; Peeking (ver. 1.2.0 - 2.1.0) [12-10-14]</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>PlayController</string>
+				<key>displayName</key>
+				<string>-(id) initWithSession:(id) adController:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithSession:adController:</string>
+				<key>typeEncoding</key>
+				<string>@16@0:4@8@12</string>
+			</dict>
+			<key>name</key>
+			<string>No Ads</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>ShuffleFeatureImplementation</string>
+				<key>displayName</key>
+				<string>-(id) baseUI</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>baseUI</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Disable Shuffle</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTActionButton</string>
+				<key>displayName</key>
+				<string>-(void) setFrame:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setFrame:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:4{CGRect={CGPoint=ff}{CGSize=ff}}8</string>
+			</dict>
+			<key>name</key>
+			<string>Remove Big Green Shuffle Button</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTPlayerRestrictions</string>
+				<key>displayName</key>
+				<string>-(BOOL) disallowSeeking</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>disallowSeeking</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Enable Scrubbing/Manual Skipping</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTPlayerRestrictions</string>
+				<key>displayName</key>
+				<string>-(BOOL) disallowPeekingAtPreviousTrack</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>disallowPeekingAtPreviousTrack</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Allow Peeking At Previous Track</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTPlayerRestrictions</string>
+				<key>displayName</key>
+				<string>-(BOOL) disallowPeekingAtNextTrack</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>disallowPeekingAtNextTrack</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Allow Peeking At Next Track</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTPlayerRestrictions</string>
+				<key>displayName</key>
+				<string>-(id) disallowSkippingToPreviousTrackReasons</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>disallowSkippingToPreviousTrackReasons</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Allow Switching Back To Previous Tracks/Album Views (Preferably After Skip Limit Is Reached)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SPTPlayerRestrictions</string>
+				<key>displayName</key>
+				<string>-(id) disallowSkippingToNextTrackReasons</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>disallowSkippingToNextTrackReasons</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Removes Skip Limit Message/Allows Peeking At Next Track After Skip Limit Is Reached</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

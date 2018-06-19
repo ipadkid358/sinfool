@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>24241</integer>
+	<key>description</key>
+	<string>Disables the 'fade to black' transition animation (from LS to HS/Apps) when unlocking.  This 'crossfade' occurs when/if... 
+
+- (1) Different wallpapers are set for the LS &amp; HS
+- (2) An app is in the foreground
+
+Made after reading a request via r/jailbreak.
+
+FYI:  You may want to use this along with the patch titled "No Unlock Animations (disables icon zooming)".
+
+[v.2] Tested with an iP6+ 8.4.  (9-5-15)
+
+⚑ UPDATES:
+(8-31-15) *Initial release
+(9-3-15) *Changed title (removed "LS •" prefix)
+(9-5-15) *Now works in landscape &amp; for apps
+
+★ If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No 'Fade To Black' Unlock Animations  ₉₋₅₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenSettings</string>
+				<key>displayName</key>
+				<string>-(void) setUnlockWallpaperInSettings:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setUnlockWallpaperInSettings:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBWallpaperController</string>
+				<key>displayName</key>
+				<string>-(void) setActiveOrientationSource:(long long) andUpdateToOrientation:(long long) usingCrossfadeToBlack:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setActiveOrientationSource:andUpdateToOrientation:usingCrossfadeToBlack:</string>
+				<key>typeEncoding</key>
+				<string>v36@0:8q16q24B32</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

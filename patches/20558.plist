@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20558</integer>
+	<key>description</key>
+	<string>Gives your switcher a transparent sleek look while also allowing the ability to multitask/interact with the switcher when an open app is in the foreground.  By default, I centered the previews to the HS &amp; removed the Icon Labels however these items can be adjusted/re-enabled as you please.  To kill apps... access the switcher from the home screen &amp; slide up where said app card preview should be. Made after reading a recent post on reddit.  (4-16-15)
+
+This is a combination/twist on a few patches so credits to them...
+• MasterMultitask (mvpixel)
+• HideAppSwitchLabel ios8 ( MissThee)
+• AppSwitch To Current (zidapi)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>SleekSwitcher (iOS 7)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageView</string>
+				<key>displayName</key>
+				<string>-(void) setView:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setView:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSliderItemScrollView</string>
+				<key>displayName</key>
+				<string>-(void) setItem:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setItem:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSliderIconController</string>
+				<key>displayName</key>
+				<string>-(float) iconLabelWidth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>iconLabelWidth</string>
+				<key>typeEncoding</key>
+				<string>f8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Icon Labels:  (pass-through=show, 0=no)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>3</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>3</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSliderScrollingViewController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned int) animated:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v16@0:4I8c12</string>
+			</dict>
+			<key>name</key>
+			<string>Centered Card:  (0=HS, 1=current app, 2=last app, etc...)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>11</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>11</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSliderIconController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned int) animated:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v16@0:4I8c12</string>
+			</dict>
+			<key>name</key>
+			<string>Centered Icon:  (0=HS/none, 1=current app, 2=last app, etc...)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>11</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>11</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

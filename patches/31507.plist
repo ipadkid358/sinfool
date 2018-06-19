@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.uie.foxsports.foxsportsgo</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31507</integer>
+	<key>description</key>
+	<string>Enables tablet &amp; PC content.  By default, the orientation is locked to landscape however this can be avoided by signing into your account.  Ideally, this patch only needs to be enabled when you sign into your account &amp; can simply be disabled thereafter.
+
+INSTRUCTIONS:
+* Enable the patch
+* Sign out of your account (if already signed in)
+* Sign into your account
+* Disable the patch
+
+[v.1] Tested with version 3.1.1.  Made as a request via r/flextweak.  Thanks to /u/marktx for testing &amp; the instructions.  (10-4-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Enable Tablet &amp; PC Content (ver. 3.1.1)  ₁₀₋₄₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIDevice</string>
+				<key>displayName</key>
+				<string>-(long long) userInterfaceIdiom</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>userInterfaceIdiom</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

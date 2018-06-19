@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31895</integer>
+	<key>description</key>
+	<string>Makes the keyboard a dark translucent style with rounded keys.  Provides the following customizable options to change the keyboard's appearance...
+
+ • Hide Predictive Text BG
+ • Backdrop Style
+ • Light KB Config/KB Appearance
+ • Key
+   · Visual Style
+   · Round Radius
+   · Nude/Outline/Text Opacity
+   · Bold Text
+   · Blue Theming
+   · Large Emoji/Dictation Icon
+   · Pop Up Style
+   · Suppress Return Key Style
+
+P=pass-through  D=Delete Unit  F=False
+
+NOTE:  I've provided some general suggestions to use for values but bear in mind your results will vary greatly depending on which features (or other tweaks/patches) you've enabled.  Feel free to experiment with your own values but I suggest testing/changing only one unit at a time.
+
+[v.3] Tested with an iP6 &amp; iPad mini2 9.3.3.  Made as a request via r/jailbreak. (11-14-16)
+
+(11-5-16) *Initial release
+(11-5-16) *Added iP5 support
+(11-14-16) *Added NudeKeys option
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>KB - Rounded Dark Translucent (Customizable)  ₁₁₋₁₄₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardPredictionCell</string>
+				<key>displayName</key>
+				<string>-(void) updateBackgroundWithRenderConfig:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>updateBackgroundWithRenderConfig:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Predictive Text BG (Automatically Hidden w/Outlined Keys): (No=D)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderConfig</string>
+				<key>displayName</key>
+				<string>-(long long) backdropStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>backdropStyle</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Backdrop Style: (Transparent=-2, Light Blur=-1, Blur=0, Dark Alt=1)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderConfig</string>
+				<key>displayName</key>
+				<string>-(bool) lightKeyboard</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>lightKeyboard</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Light KB Config</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITextInputTraits</string>
+				<key>displayName</key>
+				<string>-(long long) keyboardAppearance</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>keyboardAppearance</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>KB Appearance: (Light=0, Dark=1)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBTree</string>
+				<key>displayName</key>
+				<string>-(int) visualStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>visualStyle</string>
+				<key>typeEncoding</key>
+				<string>i16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Visual Style: (Stock=P, Outlined Entry Keys=5)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>5</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderGeometry</string>
+				<key>displayName</key>
+				<string>-(void) setRoundRectRadius:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setRoundRectRadius:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Round Radius: (Best Range=0.0-27.0) ...Lower # = More Squared</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<real>16.100000000000001</real>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderGeometry</string>
+				<key>displayName</key>
+				<string>-(double) roundRectRadius</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>roundRectRadius</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Round Radius (for iP5 etc.): (Best Range=0.0-27.0) ...Lower # = More Squared</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBKeyplaneView</string>
+				<key>displayName</key>
+				<string>-(bool) isPasscodeStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isPasscodeStyle</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - No Outline for Top Keys (NudeKeys): (Yes=F, No=P)</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderConfig</string>
+				<key>displayName</key>
+				<string>-(void) setKeycapOpacity:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setKeycapOpacity:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Outline Opacity: (0.0-1.0)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBTextStyle</string>
+				<key>displayName</key>
+				<string>-(void) setTextOpacity:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTextOpacity:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8d16</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Text Opacity: (0.0-1.0)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<real>0.69999999999999996</real>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderFactory</string>
+				<key>displayName</key>
+				<string>-(bool) boldTextEnabled</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>boldTextEnabled</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Bold Text</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderFactory</string>
+				<key>displayName</key>
+				<string>-(bool) useBlueThemingForKey:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>useBlueThemingForKey:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Use Blue Theming</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBKeyDisplayContents</string>
+				<key>displayName</key>
+				<string>-(bool) force1xImages</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>force1xImages</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Large Icons (i.e. Emoji/Dictation)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIDevice</string>
+				<key>displayName</key>
+				<string>-(long long) _keyboardGraphicsQuality</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_keyboardGraphicsQuality</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Pop Up: (Blurred BG=P, Black BG=10)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>10</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKBRenderGeometry</string>
+				<key>displayName</key>
+				<string>-(int) popupBias</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>popupBias</string>
+				<key>typeEncoding</key>
+				<string>i16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Key - Pop Up: (Transparent w/Black Key=0, Stock=P)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITextInputTraits</string>
+				<key>displayName</key>
+				<string>-(bool) suppressReturnKeyStyling</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>suppressReturnKeyStyling</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Return Key - Suppress Styling</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

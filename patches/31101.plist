@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31101</integer>
+	<key>description</key>
+	<string>Prevents new notifications from removing the lockscreen album artwork.  Forces the LS album artwork to show (whenever the media player plugin is active) &amp; new notifications/or calls are received.  Also, provides an option to show notifications after phone calls are received.
+
+Useful if you dislike your lockscreen album artwork from disappearing whenever new notifications or calls are received.
+
+[v.1] Tested with an iP6 9.3.3.  Made as a request via r/jailbreak.  (9-10-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - Always Show Album Artwork (Disable Notifications When Music Is Playing)  ₉₋₁₀₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenPluginController</string>
+				<key>displayName</key>
+				<string>-(void) _updateNotificationListForNewlyActivatedPlugin</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateNotificationListForNewlyActivatedPlugin</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Delete This Unit To Show Notifications After Missed Calls &amp; To Remove Notifications Behind The Artwork</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenPluginController</string>
+				<key>displayName</key>
+				<string>-(void) _transitionFromExclusionaryPluginToNotificationList</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_transitionFromExclusionaryPluginToNotificationList</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

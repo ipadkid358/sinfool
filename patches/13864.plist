@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>13864</integer>
+	<key>description</key>
+	<string>Changes colors of the following UI elements:
+
+• Status Bar
+• Lockscreen Clock/Date
+• Top/Bottom Grabbers
+• Camera Grabber
+• Icon Labels
+• Page Dot Indicators
+
+[v.3] Tested w/iP6+ 8.1 &amp; 8.4.  (7-28-15)
+
+⚑ UPDATES: 
+(??-??-14) *Initial release
+(4-5-15) *Added camera grabber
+(7-28-15) *Changed methods, patch title &amp; confirmed working on 8.4
+
+● If you'd like to donate via PayPal, please send money to...
+
+☞  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Change Colors on LS &amp; HS  ₇₋₂₈₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilitySettings</string>
+				<key>displayName</key>
+				<string>-(void) setPrimaryColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPrimaryColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Set Primary Color...  [Status Bar • LS Clock/Date • Page Dots (Selected) • Icon Labels]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:35,218,218,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilitySettings</string>
+				<key>displayName</key>
+				<string>-(void) setSecondaryColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSecondaryColor:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Set Secondary Color...  [Top/Bottom &amp; Camera Grabbers • Page Dots (Unselected)]</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:18,112,112,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilityLabel</string>
+				<key>displayName</key>
+				<string>-(bool) usesSecondaryColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>usesSecondaryColor</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>(optional):  LS Clock/Date uses Secondary Color</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>_UILegibilityView</string>
+				<key>displayName</key>
+				<string>-(bool) usesSecondaryColor</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>usesSecondaryColor</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>(optional):  SB Icon Label uses Secondary Color</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenView</string>
+				<key>displayName</key>
+				<string>-(bool) legibilitySettingsOverrideVibrancy</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>legibilitySettingsOverrideVibrancy</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Legibility Settings Override Vibrancy</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

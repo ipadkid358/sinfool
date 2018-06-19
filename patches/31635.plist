@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>31635</integer>
+	<key>description</key>
+	<string>Disables the slide to unlock swipe gesture.
+
+*Useful if you rarely use slide to unlock or want to mimic iOS 10's lack of STU etc.
+
+NOTE:  As a backup, I suggest setting any "At Lockscreen" accessible swipe gesture or button sequence to "Unlock Device".
+
+[v.1] Tested with an iP6+ 9.3.3.  Made as a request via r/jailbreak.  Removed the "/" from the title.  (10-12-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - Disable Slide To Unlock Swipe Gesture  ₁₀₋₁₂₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenScrollView</string>
+				<key>displayName</key>
+				<string>-(bool) gestureRecognizer:(id) shouldReceiveTouch:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>gestureRecognizer:shouldReceiveTouch:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

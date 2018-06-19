@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>42388</integer>
+	<key>description</key>
+	<string>Disables breadcrumbs (i.e. last opened app buttons) from being displayed on the far left &amp; right sides of the status bar.
+
+[v.1] Tested with an iPad mini2 on 11.1.2.  Made as a request via r/jailbreak user /u/Aceezy.  (5-20-18)
+
+☞Donations:  paypal.me/goin730</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Status Bar - No Breadcrumbs (iOS 11)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBMainDisplaySceneManager</string>
+				<key>displayName</key>
+				<string>-(bool) _shouldBreadcrumbApplicationSceneEntity:(id) withTransitionContext:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_shouldBreadcrumbApplicationSceneEntity:withTransitionContext:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

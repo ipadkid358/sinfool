@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>34770</integer>
+	<key>description</key>
+	<string>Hides the Time &amp; Date view on the lock screen.  Provides the following hiding options...
+
+- Hide only from "Today View" page = "0"
+- Hide only from lock screen = "-1"
+- Hide from both "Today View" &amp; lock screen = "1"
+
+[v.1] Tested with an iPad mini 4 on 10.2.  (2-17-17)
+
+☞PayPal:  goin730@gmail</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - Hide Time &amp; Date (Customizable)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBDashBoardView</string>
+				<key>displayName</key>
+				<string>-(void) setDateViewPageAlignment:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setDateViewPageAlignment:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Set where to hide...</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>-1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

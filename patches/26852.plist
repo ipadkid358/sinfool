@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26852</integer>
+	<key>description</key>
+	<string>Disables full screen mode (i.e. never hide bars).
+
+⚑ UPDATES:
+(12-10-15) *Initial release
+(12-15-15) *Changed method so works on both iPhones &amp; iPads
+
+[v.2] Tested with an iP6+ 9.0.2.  Made after reading a similar inquiry on r/jailbreak.  (12-15-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Disable Full Screen Mode  ₁₂₋₁₅₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BrowserController</string>
+				<key>displayName</key>
+				<string>-(bool) dynamicBarAnimator:(id) canHideBarsByDraggingWithOffset:(double)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>dynamicBarAnimator:canHideBarsByDraggingWithOffset:</string>
+				<key>typeEncoding</key>
+				<string>B32@0:8@16d24</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

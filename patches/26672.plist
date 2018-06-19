@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26672</integer>
+	<key>description</key>
+	<string>Changes the switcher's home screen card background style.  Set the style to your liking.
+
+* Normal = 0
+* Hidden = 1
+* Black = 2
+* Blur = 3
+* UltraLight (Blur only) = 4
+* SemiLight (Blur only) = 5
+* FlatSemiLight (Blur only) = 6
+* Light (Blur only) = 7
+* Dark (Blur only) = 8
+* UltraLight (Tinted Blur) = 9
+* SemiLight (Tinted Blur) = 10
+* FlatSemiLight (Tinted Blur) = 11
+* Light (Tinted Blur) = 12
+* Dark (Tinted Blur) = 14
+* UltraLight (Tint only) = 15
+* SemiLight (Tint only) = 16
+* FlatSemiLight (Tint only) = 17
+* Light (Tint only) = 18
+* Dark (Tint only) = 19
+* Background Light (Blur only) = 20
+* Background Light (Tinted Blur) = 21
+* Background Light (Tint only) = 22
+* Foreground Light (Blur only) = 23
+* Foreground Light (Tinted Blur) = 24
+* Foreground Light (Tint only) = 25
+* Switcher Background Light (Blur only) = 26
+* Switcher Background Light (Tinted Blur) = 27
+* Switcher Background Light (Tint only) = 28
+
+[v.1] Tested with an iP6+ 9.0.2 &amp; 9.3.3.  (8-13-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Switcher - HS Card Background Style  ₈₋₁₃₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSettings</string>
+				<key>displayName</key>
+				<string>-(long long) deckSwitcherForegroundWallpaperStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>deckSwitcherForegroundWallpaperStyle</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Set Style As Per Glossary Above...</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

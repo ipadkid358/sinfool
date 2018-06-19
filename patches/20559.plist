@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>20559</integer>
+	<key>description</key>
+	<string>Gives your switcher a transparent sleek look while also allowing the ability to multitask/interact with the switcher when an open app is in the foreground.  By default,  I centered the previews to HS &amp; removed the Contacts Section/Icon Labels however these items can be adjusted/re-enabled as you please.  To kill apps... access the switcher from the home screen &amp; slide up where said app card preview should be.  Made after reading a recent post on reddit.  (4-16-15) 
+
+This is a combination/twist on a few patches so credits to them...
+• MasterMultitask (mvpixel)
+• HideAppSwitchIconLabel ios8 (MissThee)
+• AppSwitch To Current (zidapi)</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>SleekSwitcher  ₄₋₁₆₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageView</string>
+				<key>displayName</key>
+				<string>-(void) setView:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setView:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherItemScrollView</string>
+				<key>displayName</key>
+				<string>-(void) setItem:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setItem:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPeopleViewController</string>
+				<key>displayName</key>
+				<string>-(void) loadView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>loadView</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Contacts Section:  (delete this unit to show contacts) </string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherIconController</string>
+				<key>displayName</key>
+				<string>-(double) iconLabelWidth</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>iconLabelWidth</string>
+				<key>typeEncoding</key>
+				<string>d16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Icon Labels:  (pass-through=show, 0=no)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>15</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>15</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageViewController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned long long) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8Q16B24</string>
+			</dict>
+			<key>name</key>
+			<string>Centered Card:  (0=HS, 1=current app, 2=last app, etc...)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherIconController</string>
+				<key>displayName</key>
+				<string>-(void) setOffsetToIndex:(unsigned long long) animated:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setOffsetToIndex:animated:</string>
+				<key>typeEncoding</key>
+				<string>v28@0:8Q16B24</string>
+			</dict>
+			<key>name</key>
+			<string>Centered Icon:  (0=HS/none, 1=current app, 2=last app, etc...)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>14</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>14</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

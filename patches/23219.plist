@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>23219</integer>
+	<key>description</key>
+	<string>Disables native Quick Reply on the lockscreen &amp; home screen.  You can still pull down the banner to view longer messages.  Made after reading a request via r/jailbreak.  
+
+[v.1] Tested with an iP6+ 8.4.  (7-27-15)
+
+You may want to try these patches as well...
+
+➠ Sticky Notification Banner
+➠ Disable Banner Swipe Gestures
+➠ NoQuickDismiss
+➠ Disable Tap
+➠ NoTouchCancelReply
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Banners • NoQuickReply  ₇₋₂₇₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBulletinBannerItem</string>
+				<key>displayName</key>
+				<string>-(id) pullDownNotification</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>pullDownNotification</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>41841</integer>
+	<key>description</key>
+	<string>Hides folder icons, labels and disables selection of the blank space left in its place thereby making them invisible.
+
+IMPORTANT NOTE:  This patch is only useful if you don't actively use folders and are looking for a rudimentary way to...
+
+* Hide apps from the homescreen (but still have them searchable via SpotLight) or...
+* To create blank icon spaces to use as an alternative to tweaks like Anchor or GridLock.
+
+DIRECTIONS:
+
+- CREATING BLANK ICONS:  Make any safari bookmark/web clip &amp; put it into a folder.  Repeat this process for as many blank icons you need.  Position these folders where you want your blank icons.  Enable the patch &amp; respring.
+
+- HIDING APPS FROM THE HS/SPRINGBOARD:  Put apps in a folder &amp; position it as the last icon on your HS (or wherever you want).  Enable the patch &amp; respring.
+
+You must disable this patch whenever you'd like to add additional apps/web clips to a folder.
+
+[v.1] Tested with an iPad mini4 10.2.  Requested by /u/NoMorePartiesInElAyy.  (4-6-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Folder - Incognito Folders (Hide Apps, Blank Icons or Anchor/GridLock Alternative)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBFolderIconView</string>
+				<key>displayName</key>
+				<string>-(void) setIcon:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setIcon:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

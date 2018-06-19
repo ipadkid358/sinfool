@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>org.videolan.vlc-ios</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>11179</integer>
+	<key>description</key>
+	<string>When enabled, this patch prevents accidental file deletion/editing by doing the following...  (1) Removes the edit button.  (2) Disables the long hold gesture/edit mode.  (3) Disables menu button access.   NOTE:  To re-enable menu button access/functionality... toggle this patch on/off as needed OR delete the unit specified below.</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Child Proof</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UINavigationItem</string>
+				<key>displayName</key>
+				<string>-(void) _setRightBarButtonItem:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setRightBarButtonItem:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) _setRightBarButtonItem:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>VLCPlaylistViewController</string>
+				<key>displayName</key>
+				<string>-(void) _collectionViewHandleLongPressGesture:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_collectionViewHandleLongPressGesture:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Unit for -(void) _collectionViewHandleLongPressGesture:(id)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>VLCPlaylistViewController</string>
+				<key>displayName</key>
+				<string>-(void) leftButtonAction:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>leftButtonAction:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>***DELETE THIS*** ...for normal Menu Button Functionality</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

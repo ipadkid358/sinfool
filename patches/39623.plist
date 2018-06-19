@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.camera</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39623</integer>
+	<key>description</key>
+	<string>Changes the dial selector style to the iPad type.  Also provides a few options to change the style of the top/bottom bars, flip button and shutter button ring.
+
+[v.1] Tested with an iPad mini 4 10.2 but made more for iPhones.  This was made to replicate a request via r/jailbreak user /u/ahsan_mahar.  (10-5-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>iPad Layout Style For Dial Selector</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMViewfinderViewController</string>
+				<key>displayName</key>
+				<string>-(long long) _topBarBackgroundStyleForMode:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_topBarBackgroundStyleForMode:</string>
+				<key>typeEncoding</key>
+				<string>q24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Top Bar BG Style: (Dark Tint=0, Transparent=1, Black=2)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMViewfinderViewController</string>
+				<key>displayName</key>
+				<string>-(long long) _bottomBarBackgroundStyleForMode:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_bottomBarBackgroundStyleForMode:</string>
+				<key>typeEncoding</key>
+				<string>q24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Bottom Bar BG Style: (Dark Tint=0, Transparent=1, Black=2)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMModeDial</string>
+				<key>displayName</key>
+				<string>-(void) setLayoutStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setLayoutStyle:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Dial Style: (iPhone=0, iPad=1)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMShutterButtonRingView</string>
+				<key>displayName</key>
+				<string>-(void) drawRect:(CGRect)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>drawRect:</string>
+				<key>typeEncoding</key>
+				<string>v48@0:8{CGRect={CGPoint=dd}{CGSize=dd}}16</string>
+			</dict>
+			<key>name</key>
+			<string>Removes Shutter Button Ring</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CAMFlipButton</string>
+				<key>displayName</key>
+				<string>-(void) setLayoutStyle:(long long)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setLayoutStyle:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8q16</string>
+			</dict>
+			<key>name</key>
+			<string>Flip Button Style: (Outline=0, Circle=1, Solid=2)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

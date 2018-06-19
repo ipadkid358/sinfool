@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.rhapsody.iphone.Rhapsody3</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>19440</integer>
+	<key>description</key>
+	<string>Customizes the offline status bar to make it less intrusive (see options below).  The text is currently set to show "Flex 2" but you can change it to whatever you'd like or remove the text altogether.  Tested with iPad mini2 8.1.  UPDATED (3-9-15)
+
+• Customize "Rhapsody is offline." text
+• Remove the orange background color 
+• Show or Hide offline SB in full player</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Customize Offline Status Bar</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>RHStatusBarView</string>
+				<key>displayName</key>
+				<string>-(void) setStatusMessage:(id) ofType:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setStatusMessage:ofType:</string>
+				<key>typeEncoding</key>
+				<string>v16@0:4@8i12</string>
+			</dict>
+			<key>name</key>
+			<string>Customize:  (Argument#1) Set Custom Text, pass-through=stock, (NULL)=none  (Argument#2)  0=No Orange Background Color, pass-through=stock</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>Flex 2</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>4</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>4</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>RHFullPlayerContainerViewController</string>
+				<key>displayName</key>
+				<string>-(id) statusBarView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>statusBarView</string>
+				<key>typeEncoding</key>
+				<string>@8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Full Player SB View:  (pass-through=show, (NULL)=hide)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

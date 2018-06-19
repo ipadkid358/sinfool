@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>40797</integer>
+	<key>description</key>
+	<string>Do you get annoyed when trying to press and pull the grabber for CC, NC or the multitasking side switcher?  If so, (&amp; you don't already use any of the "Show On First Swipe" patches or the tweak "AlwaysFirstSwipe") than this patch is for you!
+
+This patch provides better swiping of the grabber for CC, NC and the multitasking side switcher by allowing you to swipe anywhere along the screen edge for the second swipe instead of having to precisely tap &amp; pull the grabber.
+
+So essentially... just swipe twice anywhere along the screen edge to show the corresponding menu.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  (2-8-18)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>CC/NC/Side Switcher - Better Grabber Swiping</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBScreenEdgePanGestureRecognizer</string>
+				<key>displayName</key>
+				<string>-(bool) isLocationWithinGrabberActiveZone</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isLocationWithinGrabberActiveZone</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>NC/CC</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBGrabberTongue</string>
+				<key>displayName</key>
+				<string>-(bool) _recognizerIsWithinGrabberZone:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_recognizerIsWithinGrabberZone:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Side Switcher</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

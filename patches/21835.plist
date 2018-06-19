@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.johncoates.Flex</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>21835</integer>
+	<key>description</key>
+	<string>Disables the "Warning" Restart Now/Later alert displayed after selecting a SpringBoard or System Wide patch.  Useful for those who regularly test or enable/disable multiple patches at once &amp; use another method to respring, ie. Activator etc.  (6-25-15)
+
+⚠️ NOTE:  A respring is STILL required to apply patch changes systemwide.
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>No "Warning" Restart Now/Later Alert  ₆₋₂₅₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>FLPatchesViewController</string>
+				<key>displayName</key>
+				<string>-(void) showSpringBoardAlertForPatch:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>showSpringBoardAlertForPatch:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

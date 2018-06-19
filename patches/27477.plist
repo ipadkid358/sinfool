@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27477</integer>
+	<key>description</key>
+	<string>Closes all open tabs whenever any of the following occurs...
+
+- Safari is killed
+- Respring
+- Reboot
+
+⚑ UPDATES:
+(1-27-16) *Initial release
+(8-13-16) *Changed method to default to favorites instead of a blank page
+
+[v.2] Tested with an iP6+ 9.0.2.  (8-13-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Close All Open Tabs  ₈₋₁₃₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>TabController</string>
+				<key>displayName</key>
+				<string>-(void) _restorePersistentDocumentState:(id) into:(id) withCurrentActiveDocument:(id) activeDocumentIsValid:(bool) restoredActiveDocumentIndex:(unsigned long long) shouldRestoreSessionData:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_restorePersistentDocumentState:into:withCurrentActiveDocument:activeDocumentIsValid:restoredActiveDocumentIndex:shouldRestoreSessionData:</string>
+				<key>typeEncoding</key>
+				<string>v56@0:8@16@24@32B40Q44B52</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

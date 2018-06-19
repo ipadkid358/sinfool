@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39866</integer>
+	<key>description</key>
+	<string>Have you ever wanted to turn off "Show Previews" for all notifications instead of just for Messages?  If so, this patch is for you...
+
+Allows you to set a custom message/text (or remove all text) for all notifications thereby giving you the ability to protect your privacy for third party app notifications.  By default, I removed all text except for the preview text which currently displays "New Notification" but you can delete units to show stock text (i.e. the contact/phone # etc) or set a custom text of your choosing.
+
+Customizes the following text...
+
+- Primary Text: (Contact/Sender/Phone # etc)
+- Primary Subtitle Text
+- Secondary Text: (Preview/Body/iMessage Text etc)
+- Hint Text: (Slide for more/Unlock for more etc)
+
+[v.1] Tested with an iPad mini 4 on 10.2.  Made as a request via e-mail.  (10-28-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>LS/NC/Banners - Notification Privacy</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCNotificationShortLookView</string>
+				<key>displayName</key>
+				<string>-(void) setPrimaryText:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPrimaryText:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Primary Text (Contact/Sender/Phone # etc): (Default=No Text, Set Custom Text=Override Type:NSString or Stock Text=D)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCNotificationShortLookView</string>
+				<key>displayName</key>
+				<string>-(void) setPrimarySubtitleText:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setPrimarySubtitleText:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Primary Subtitle Text: (Default=No Text, Set Custom Text=Override Type:NSString or Stock Text=D)</string>
+			<key>overrides</key>
+			<array>
+				<dict/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCNotificationShortLookView</string>
+				<key>displayName</key>
+				<string>-(void) setSecondaryText:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSecondaryText:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Secondary Text (Preview/Body/iMessage Text etc): (Default="New Notification" Text, Set Custom Text=Override Type:NSString or Stock Text=D)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>New Notification </string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>NCNotificationShortLookView</string>
+				<key>displayName</key>
+				<string>-(void) setHintText:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setHintText:</string>
+				<key>typeEncoding</key>
+				<string>v24@0:8@16</string>
+			</dict>
+			<key>name</key>
+			<string>Hint Text: (Slide for more/Unlock for more etc): (Default=No Text, Set Custom Text=Override Type:NSString or Stock Text=D)</string>
+			<key>overrides</key>
+			<array>
+				<dict/>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

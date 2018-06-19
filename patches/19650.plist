@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>19650</integer>
+	<key>description</key>
+	<string>Customizes the return key button as listed below ... The text is currently set to show "®" but you can change it to whatever you want or leave it blank for no text.  Tested with an iP6+ 8.1.  (3-16-15)
+
+• Enable/Disable Return Button Action
+• Custom Text
+• Button Type (standard/blue...when enabled)
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Custom Return Key  ₃₋₁₆₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIKeyboardLayoutStar</string>
+				<key>displayName</key>
+				<string>-(void) setReturnKeyEnabled:(bool) withDisplayName:(id) withType:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setReturnKeyEnabled:withDisplayName:withType:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8B16@20i28</string>
+			</dict>
+			<key>name</key>
+			<string>Enable Button: (Arg#1)=T or F; Custom Text: (Arg#2); Button Type: (Arg#3) Stock=pass-through, Blue=1</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>1</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>®</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

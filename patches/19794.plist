@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>19794</integer>
+	<key>description</key>
+	<string>Disables banner swipe gestures (all up + down swipes or just in quick reply modes etc.)  By default, only the 'swipe up' to dismiss QR gesture is disabled.  Change the values as described to disable all swipe gestures.  Made as a request via r/flextweak.
+
+[v.1] Tested on iP6+ 8.1.  (3-21-15)
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Banners • Disable Swipe Gestures  ₃₋₂₁₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBBannerGestureHandler</string>
+				<key>displayName</key>
+				<string>-(id) initWithBannerController:(id) bannerViewController:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithBannerController:bannerViewController:</string>
+				<key>typeEncoding</key>
+				<string>@32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>(Return Value): Disable all up + down swipe gestures=NULL, Stock=pass-through  (Arg#2): Disable swipe up gesture in quick reply etc.=NULL, Stock=pass-through</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

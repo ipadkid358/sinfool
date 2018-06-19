@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.MobileSMS</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>19691</integer>
+	<key>description</key>
+	<string>Have you ever swiped up on the entry field bar's quick compose camera icon only to mistakenly take &amp; send a picture? ...If so then this is for you.
+
+When sliding up, this makes the camera icon require a separate tap before actually sending a picture.
+
+[v.1] Tested on iP6+ 8.1 &amp; 8.4.  (9-5-15)
+
+⚑ UPDATES:
+(3-18-15) *Initial release
+(9-6-15) *Confirmed working on 8.4
+
+★ If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Less MisTakes  ₉₋₆₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>CKJoystickButtonItem</string>
+				<key>displayName</key>
+				<string>-(void) sendActionFrom:(id) forEvent:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>sendActionFrom:forEvent:</string>
+				<key>typeEncoding</key>
+				<string>v32@0:8@16@24</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

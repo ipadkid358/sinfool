@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.flex.systemwide</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>27543</integer>
+	<key>description</key>
+	<string>Forces the status bar to show when rotated in landscape.
+
+IMPORTANT NOTE:  This patch causes an issue with landscape capturing in the Camera app.  If this is a deal breaker or you're experiencing other adverse side effects... then just duplicate this patch on an app specific basis.
+
+[v.2] Tested with an iP6+ 9.0.2.  Made as a request via r/jailbreak.  (1-31-16)
+
+⚑ UPDATES:
+(1-29-16) *Initial release
+(1-31-16) *Fixed crashing/visual bug
+
+(9-15-16) *Thank you to /u/Musicisevil for reporting the landscape Camera app issue 
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Status Bar - Force Show In Landscape  ₁₋₃₁₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITraitCollection</string>
+				<key>displayName</key>
+				<string>-(long long) verticalSizeClass</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>verticalSizeClass</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

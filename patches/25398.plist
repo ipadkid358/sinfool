@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25398</integer>
+	<key>description</key>
+	<string>Disables lockscreen battery charging views/animations.
+
+Optional: Also includes an option to enable "% Charged" text below the time.
+
+[v.1] Tested with an iP5 9.0.2.  (10-19-15)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>LS - No Battery Charging Animations  ₁₀₋₁₉₋₁₅</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(void) _addBatteryChargingViewAndShowBattery:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_addBatteryChargingViewAndShowBattery:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4c8</string>
+			</dict>
+			<key>name</key>
+			<string>Show "% Charged" Below Time</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(void) _updateBatteryChargingViewAnimated:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateBatteryChargingViewAnimated:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4c8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBLockScreenViewController</string>
+				<key>displayName</key>
+				<string>-(void) _startFadeInAnimationForBatteryView:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_startFadeInAnimationForBatteryView:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4c8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

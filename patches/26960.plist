@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.mobilesafari</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>26960</integer>
+	<key>description</key>
+	<string>Enables full screen scrolling.  Also provides an option to remove the status bar.
+
+[v.2] Tested with an iP6+ 9.0.2.  (8-30-16)
+
+⚑ UPDATES:
+(12-17-15) *Initial release
+(1-15-16) *Changed title from "Full Screen"
+(8-30-16) *Fixed status bar hiding for 9.3.3
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Full Screen Scrolling  ₈₋₃₀₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIViewController</string>
+				<key>displayName</key>
+				<string>-(bool) prefersStatusBarHidden</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>prefersStatusBarHidden</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Status Bar</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BrowserController</string>
+				<key>displayName</key>
+				<string>-(bool) _isVerticallyConstrained</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_isVerticallyConstrained</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

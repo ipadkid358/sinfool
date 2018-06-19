@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>38299</integer>
+	<key>description</key>
+	<string>Disables both volume up &amp; down buttons.
+
+*Useful if you have broken volume buttons which trigger inadvertently.
+
+⚠️ NOTE:  I suggest using Activator events/gestures (maybe slide up/down along screen edge to increase/decrease volume increments.
+
+[v.1] Tested with an iPad mini 4 on 10.2.  (6-26-17)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>ButtonDisabler - Volume Buttons (Both) (iOS 10)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SpringBoard</string>
+				<key>displayName</key>
+				<string>-(bool) _volumeChanged:(__IOHIDEvent*)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_volumeChanged:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8^{__IOHIDEvent=}16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

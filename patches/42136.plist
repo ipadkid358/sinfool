@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>42136</integer>
+	<key>description</key>
+	<string>Enables split view multitasking on iPads which natively lack/are restricted by Apple from using the capability.
+
+HOW TO ENABLE:
+
+* Open an app.
+* Swipe up to invoke the dock.
+* Hold &amp; drag the second app you want to open onto the middle of the screen.
+* Swipe down on the gray bar to open split view.
+* Resize your app windows by dragging the app divider.
+* Close split view by dragging the divider over the app you want to close.
+
+NOTE:  This patch requires the following option @ Settings -&gt; General -&gt; Multitasking &amp; Dock -&gt; Allow Multiple Apps to be toggled on.
+
+⚑ UPDATES:
+(4-30-18) *Initial release
+(5-13-18) *Removed experimental iPhone entries
+
+[v.2] Tested on an iPad mini2 11.1.2.  Requested on r/jailbreak by /u/Klaes-Pinto.  (5-13-18)
+
+☞Donations:  paypal.me/goin730</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Medusa - Enable iPad Multitasking (iOS 11)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBApplication</string>
+				<key>displayName</key>
+				<string>-(bool) isMedusaCapable</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isMedusaCapable</string>
+				<key>typeEncoding</key>
+				<string>B16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBPlatformController</string>
+				<key>displayName</key>
+				<string>-(long long) medusaCapabilities</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>medusaCapabilities</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>2</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBApplication</string>
+				<key>displayName</key>
+				<string>-(bool) _supportsApplicationType:(int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_supportsApplicationType:</string>
+				<key>typeEncoding</key>
+				<string>B20@0:8i16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

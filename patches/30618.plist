@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>30618</integer>
+	<key>description</key>
+	<string>Makes the "Today" &amp; "Notifications" tabs transparent with small or large text.  Also provides options to change button &amp; title colors.
+
+[v.1] Tested with an iP6+ 9.3.3.  (8-24-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>NC - Transparent Tabs w/ Large or Small Text  ₈₋₂₄₋₁₆</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UISegment</string>
+				<key>displayName</key>
+				<string>-(id) initWithInfo:(id) style:(long long) size:(int) barStyle:(long long) tintColor:(id) appearanceStorage:(id) position:(unsigned int) autosizeText:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithInfo:style:size:barStyle:tintColor:appearanceStorage:position:autosizeText:</string>
+				<key>typeEncoding</key>
+				<string>@68@0:8@16q24i32q36@44@52I60B64</string>
+			</dict>
+			<key>name</key>
+			<string>(Arg#2):	Standard Text=-1, Large Text=0</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>2</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBControlColorSettings</string>
+				<key>displayName</key>
+				<string>-(id) initWithTintColor:(id) selectedTintColor:(id) textColor:(id) selectedTextColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTintColor:selectedTintColor:textColor:selectedTextColor:</string>
+				<key>typeEncoding</key>
+				<string>@48@0:8@16@24@32@40</string>
+			</dict>
+			<key>name</key>
+			<string>(Arg#1):Button Color (Arg#2):Selected Color (Arg#3):Text Color (Arg#4):Selected Text Color</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

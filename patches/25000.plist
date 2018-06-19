@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>25000</integer>
+	<key>description</key>
+	<string>Brings back the iOS7/8 switcher style for iOS 9.
+
+NOTE:  Seems to conflict with Tage's switcher invoking gestures and maybe some other tweaks.
+
+⚑ UPDATES:
+(10-15-15) *Initial release
+(12-13-15) *Removed scaled corner &amp; BG images (phone app etc) &amp; added option to remove animated dismissal.
+(2-23-16) *Added option to remove icon slide animation
+
+[v.3] Tested with an iP6+ 9.0.2.  (2-23-16)
+
+☞PayPal:  goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>Switcher - Legacy Style  ₂₋₂₃₋₁₆ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBUIDismissSwitcherAnimationController</string>
+				<key>displayName</key>
+				<string>-(id) initWithTransitionContextProvider:(id) activatingDisplayItem:(id) interactive:(bool)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithTransitionContextProvider:activatingDisplayItem:interactive:</string>
+				<key>typeEncoding</key>
+				<string>@36@0:8@16@24B32</string>
+			</dict>
+			<key>name</key>
+			<string>OPTIONAL - Remove Dismiss Animation &amp; Allow Immediate Interaction w/Apps "If Loaded" (but if "not loaded" then no opening animation):  (YES=Return Value:NULL)</string>
+			<key>overrides</key>
+			<array>
+				<array/>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherController</string>
+				<key>displayName</key>
+				<string>-(id) _animationFactoryForIconAlphaTransition</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_animationFactoryForIconAlphaTransition</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>OPTIONAL - Remove Icon Slide Left Animation On App/Card Open:  (Yes=NULL)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSettings</string>
+				<key>displayName</key>
+				<string>-(long long) switcherStyle</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>switcherStyle</string>
+				<key>typeEncoding</key>
+				<string>q16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>9</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>9</integer>
+						<key>value</key>
+						<integer>0</integer>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherPageView</string>
+				<key>displayName</key>
+				<string>-(id) overlay</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>overlay</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBAppSwitcherSnapshotView</string>
+				<key>displayName</key>
+				<string>-(void) _updateTranslucency</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_updateTranslucency</string>
+				<key>typeEncoding</key>
+				<string>v16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

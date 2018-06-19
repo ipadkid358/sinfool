@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.iBooks</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>22899</integer>
+	<key>description</key>
+	<string>Changes colors (&amp; hides) the following items in iBooks...  Tested on iP6+ 8.4.  (7-20-15)
+
+• Status Bar BG &amp; FG
+• Top Shelf Nav Bar
+• Search Bar
+• Wallpaper
+• Top Gradient
+• Top Gradient#2
+• Tab Bar Image (Selected)
+• Tab Bar Image (Unselected)
+• Hide Tab Bar Image
+• Hide Tab Bar Label
+• Hide Tab Bar Background
+
+⚑ UPDATES:  
+(7-17-15) *Original release
+(7-20-15) *Changed patch title &amp; added method
+
+By default, some things are hidden &amp; I didn't assign all items a color nor did I enable a transparent wallpaper BG (change the entry specified below &amp; use "Sleek View" for a true 100% transparent BG).  Change colors to your liking or delete any entries you don't want to use.  You may want to try these patches as well...
+
+➠ Sleek View (SpringBoard Section)
+➠ No Shelves
+➠ Force Night 'or Light' Mode (My Books)
+➠ Night Mode
+
+● If you enjoy my patches, please consider sending a donation...
+
+☞PayPal:	goin730@gmail.com</string>
+	<key>formatVersion</key>
+	<integer>0</integer>
+	<key>title</key>
+	<string>SleekBooks (Customizable)  ₇₋₂₀₋₁₅ ⚑</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarNewUIStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(id) initWithRequest:(id) backgroundColor:(id) foregroundColor:(id) hasBusyBackground:(BOOL)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithRequest:backgroundColor:foregroundColor:hasBusyBackground:</string>
+				<key>typeEncoding</key>
+				<string>@24@0:4@8@12@16c20</string>
+			</dict>
+			<key>name</key>
+			<string>Status Bar:  Hide=(Return Value):NULL, Background=(Arg#2), Foreground=(Arg#3)</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UIStatusBarNewUIStyleAttributes</string>
+				<key>displayName</key>
+				<string>-(BOOL) isTranslucent</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>isTranslucent</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>•</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<true/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IMThemeBookshelf</string>
+				<key>displayName</key>
+				<string>-(void) setShelfTopColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setShelfTopColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Top Shelf/Nav Bar</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IMThemeBookshelf</string>
+				<key>displayName</key>
+				<string>-(void) setSearchBackgroundColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setSearchBackgroundColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Search Bar</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:18,110,110,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BKLibraryViewController</string>
+				<key>displayName</key>
+				<string>-(id) wallpaperView</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>wallpaperView</string>
+				<key>typeEncoding</key>
+				<string>@16@0:8</string>
+			</dict>
+			<key>name</key>
+			<string>Transparent/Sleek View:  Yes=NULL, No=pass-through</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>BKBlurryWallpaperView</string>
+				<key>displayName</key>
+				<string>-(void) setScrimColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setScrimColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Wallpaper</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:35,218,218,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IMThemeBookshelf</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundFixedGradientColor0:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundFixedGradientColor0:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Top Gradient *[optional]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>IMThemeBookshelf</string>
+				<key>displayName</key>
+				<string>-(void) setBackgroundFixedGradientColor1:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setBackgroundFixedGradientColor1:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Top Gradient *[optional]</string>
+			<key>overrides</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBar</string>
+				<key>displayName</key>
+				<string>-(void) setTintColor:(id)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>setTintColor:</string>
+				<key>typeEncoding</key>
+				<string>v12@0:4@8</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Bar Image (Selected)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:23,143,143,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBarButton</string>
+				<key>displayName</key>
+				<string>-(void) _setContentTintColor:(id) forState:(unsigned int)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_setContentTintColor:forState:</string>
+				<key>typeEncoding</key>
+				<string>v16@0:4@8I12</string>
+			</dict>
+			<key>name</key>
+			<string>Tab Bar Image (Unselected)</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>1</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>3</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>FLcolor:146,146,146,255</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBarButton</string>
+				<key>displayName</key>
+				<string>-(id) initWithImage:(id) selectedImage:(id) label:(id) withInsets:(UIEdgeInsets)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>initWithImage:selectedImage:label:withInsets:</string>
+				<key>typeEncoding</key>
+				<string>@36@0:4@8@12@16{UIEdgeInsets=ffff}20</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Tab Bar Items:  [NULL=Hide] (Arg#1):Image, (Arg#3):Label</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>3</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>1</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>1</integer>
+						<key>value</key>
+						<string>(FLNULL)</string>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>UITabBar</string>
+				<key>displayName</key>
+				<string>-(BOOL) _backgroundNeedsUpdate</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_backgroundNeedsUpdate</string>
+				<key>typeEncoding</key>
+				<string>c8@0:4</string>
+			</dict>
+			<key>name</key>
+			<string>Hide Tab Bar Background:	Yes=FALSE</string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>5</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>5</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

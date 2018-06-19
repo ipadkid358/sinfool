@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>applicationIdentifier</key>
+	<string>com.apple.springboard</string>
+	<key>author</key>
+	<string>sinfool</string>
+	<key>authorID</key>
+	<integer>6719</integer>
+	<key>cloudID</key>
+	<integer>39448</integer>
+	<key>description</key>
+	<string>Disables voice control.  Useful if you don't use voice control and are annoyed when it's menu accidentally pops up.
+
+[v.1] Tested on iOS 9.3.3 &amp; 10.2.  Made as a request via r/jailbreak user /u/YOURMOM37.  (9-21-17)</string>
+	<key>formatVersion</key>
+	<integer>3</integer>
+	<key>title</key>
+	<string>Disable Voice Control (iOS 10)</string>
+	<key>units</key>
+	<array>
+		<dict>
+			<key>methodObjc</key>
+			<dict>
+				<key>className</key>
+				<string>SBPolicyAggregator</string>
+				<key>displayName</key>
+				<string>-(bool) _allowsCapabilityVoiceControlWithExplanation:(id*)</string>
+				<key>prefix</key>
+				<string>-</string>
+				<key>selector</key>
+				<string>_allowsCapabilityVoiceControlWithExplanation:</string>
+				<key>typeEncoding</key>
+				<string>B24@0:8^@16</string>
+			</dict>
+			<key>name</key>
+			<string></string>
+			<key>overrides</key>
+			<array>
+				<dict>
+					<key>argument</key>
+					<integer>0</integer>
+					<key>type</key>
+					<dict>
+						<key>subtype</key>
+						<integer>0</integer>
+						<key>type</key>
+						<integer>6</integer>
+					</dict>
+					<key>value</key>
+					<dict>
+						<key>type</key>
+						<integer>6</integer>
+						<key>value</key>
+						<false/>
+					</dict>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
